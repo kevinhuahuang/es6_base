@@ -1,49 +1,54 @@
-// let person = {
-//     name: '张三'
-// }
-
+/**********************************************************************************************************************
+ *  get(target, propKey, receiver)
+ **********************************************************************************************************************/
 // // 实例1：当读取不存在的属性时，抛出错误或其它信息而不是返回undefined
+// let person = {
+//   name: '张三'
+// }
 // let proxy = new Proxy(person, {
-//     get: function(target, property) {
-//         if (property in target) {
-//             return target[property]
-//         } else {
-//             // throw new ReferenceError('Property \"' + property + "\" does not exist")
-//             return '没有这个属性'
-//         }
+//   get: function (target, property) {
+//     if (property in target) {
+//       return target[property]
+//     } else {
+//       // throw new ReferenceError('Property \"' + property + "\" does not exist")
+//       return '没有这个属性'
 //     }
+//   }
 // })
 //
-// console.log(proxy.name)
-// console.log(proxy.age)
-
-//= =====================================================================================================================
+// // 针对的是Proxy实例，而不是目标对象
+// console.log('代理人名字： ' + proxy.name)
+// console.log('代理人年龄： ' + proxy.age)
+// // 针对目标对象的操作
+// console.log('本人名字:  ' + person.name)
+// console.log('本人年龄： ' + person.age)
+// =====================================================================================================================
 // // 实例2：拦截读取继承属性
 // let proto = new Proxy({}, {
-//     get(target, propertyKey, receiver) {
-//         console.log('GET' + propertyKey)
-//         return target[propertyKey]
-//     }
+//   get (target, propertyKey, receiver) {
+//     console.log('GET' + propertyKey)
+//     return target[propertyKey]
+//   }
 // })
 //
 // let obj = Object.create(proto)
 // console.log(obj.name)
-//= =====================================================================================================================
+// =====================================================================================================================
 // // 实例3： 数组读取负数索引（负数索引表示倒着取数）
-// function createArray(...elements) {
-//     let handler = {
-//         get(target, propKey, receiver) {
-//             let index = Number(propKey)
-//             if (index < 0) {
-//                 propKey = String(target.length + index)
-//             }
-//             return Reflect.get(target, propKey, receiver)
-//         }
+// function createArray (...elements) {
+//   let handler = {
+//     get (target, propKey, receiver) {
+//       let index = Number(propKey) // propKey类型为String
+//       if (index < 0) {
+//         propKey = String(target.length + index) // 由负的数组索引计算出对应的正的数组索引
+//       }
+//       return Reflect.get(target, propKey, receiver) // propKey类型为字符串
 //     }
+//   }
 //
-//     let target = []
-//     target.push(...elements)
-//     return new Proxy(target, handler)
+//   let target = []
+//   target.push(...elements)
+//   return new Proxy(target, handler) // 返回一个Proxy实例
 // }
 //
 // let arr = createArray('a', 'b', 'c')
@@ -51,132 +56,381 @@
 // arr.push('e')
 // console.log(arr[-1])
 
-//= =====================================================================================================================
-// // 实例4：实例属性的链式操作（将属性的读取转换为执行一个函数） 需要html中运行
-// let pipe = (function () {
-//     return function (value) {
-//         let funcStack = []
-//         let oproxy = new Proxy({}, {
-//             get: function (pipeObject, fnName) {
-//                 if (fnName === 'get') {
-//                     return funcStack.reduce(function (val, fn) {
-//                         return fn(val)
-//                     }, value)
-//                 }
-//                 funcStack.push(window[fnName])
-//                 return oproxy
-//             }
-//         })
-//         return oproxy
-//     }
-// }())
-//
-// let double = n => n * 2
-// let pow = n => n * n
-// let reverseInt = n => n.toString().split("").reverse().join("") | 0
-//
-// console.log(pipe(3).double.pow.reverseInt.get)
-
-// ======================================================================================================================
-// 实例5：实现一个生成各种DOM节点的通用函数dom 需要html文件中运行
-// const dom = new Proxy({}, {
-//     get(target, property) {
-//         return function(attrs = {}, ...children) {
-//             const el = document.createElement(property)
-//             for (let prop of Object.keys(attrs)) {
-//                 el.setAttribute(prop, attrs[prop])
-//             }
-//             for (let child of children) {
-//                 if (typeof child === 'string') {
-//                     child = document.createTextNode(child)
-//                 }
-//                 el.appendChild(child)
-//             }
-//             return el
-//         }
-//     }
-// })
-//
-// const el = dom.div({},
-//     'Hello, my name is',
-//     dom.a({href:  '//example.com'}, 'Mark'),
-//     '. I like:',
-//     dom.ul({},
-//         dom.li({}, 'The web'),
-//         dom.li({}, 'Food'),
-//         dom.li({}, '...actually that\'s it')))
-//
-// document.body.appendChild(el)
-
+/**********************************************************************************************************************
+ *  set(target, propKey, value, receiver)
+ **********************************************************************************************************************/
 // ======================================================================================================================
 // // 实例数据的限制
 // let validator = {
-//     set: function (obj, prop, value) {
-//         if (prop === 'age') {
-//             if (!Number.isInteger(value)) {
-//                 throw new TypeError('The age is not an integer')
-//             }
-//             if (value > 200) {
-//                 throw new RangeError('The age seems invalid')
-//             }
+//   set: function (obj, prop, value) {
+//     if (prop === 'age') {
+//       if (!Number.isInteger(value)) {
+//         throw new TypeError('The age is not an integer')
+//       }
+//       if (value > 200) {
+//         throw new RangeError('The age seems invalid')
+//       }
 //
-//             //对于age以外的属性，直接保存
-//             obj[prop] = value
-//         }
+//       // 对于age以外的属性，直接保存
+//       obj[prop] = value
 //     }
+//   }
 // }
 //
 // let person = new Proxy({}, validator)
 //
 // person.age = 100
-//
 // console.log(person.age)
 // person.age = 'young'
 // person.age = 300
 
 // ======================================================================================================================
 // // 防止内部属性“_”被外部读写（通常我们以下划线开头，表示其内部属性）
-// var handler = {
-//     get (target, key) {
-//         invariant(key, 'get')
-//         return target[key]
-//     },
-//     set (target, key, value) {
-//         invariant(key, 'set')
-//         target[key] = value
-//         return true
-//     }
+// let handler = {
+//   get (target, key) {
+//     invariant(key, 'get')
+//     return target[key]
+//   },
+//   set (target, key, value) {
+//     invariant(key, 'set')
+//     target[key] = value
+//     return true
+//   }
 // }
 //
 // function invariant (key, action) {
-//     if (key[0] === '_') {
-//         throw new Error(`Invalid attempt to ${action} private "${key}" property`)
-//     }
+//   if (key[0] === '_') { // key是String类型，key[0]是字符串中的第一个字母
+//     throw new Error(`Invalid attempt to ${action} private "${key}" property`)
+//   }
 // }
 //
+// let target = {}
+// let proxy = new Proxy(target, handler)
+// console.log(proxy._prop)
+// proxy._prop = 'c'
+// ======================================================================================================================
+// set方法的第四个参数receiver, 指的是原始的操作行为实在的对象，一般情况下就是Proxy本身
+// const handler = {
+//   set: function (obj, prop, value, receiver) {
+//     obj[prop] = receiver // 返回Proxy实例本身
+//   }
+// }
+//
+// const proxy = new Proxy({}, handler)
+// proxy.foo = 'bar'
+// console.log(proxy) // foo: [Circular] circular：循环的，通知，传单
+// console.log(proxy.foo === proxy) // true
+// =====================================================================================================================
+// 如果目标对象的某个属性，不可配置且不可写，那么set方法将不起作用
+// const obj = {}
+// Object.defineProperty(obj, 'foo', {
+//   value: 'bar',
+//   writable: false // 设置为不可修改
+// })
+//
+// const handler = {
+//   set: function (obj, prop, value, receiver) {
+//     obj[prop] = 'baz' // 如果目标对象属性无法修改，此语句将无效
+//   }
+// }
+// const proxy = new Proxy(obj, handler)
+// proxy.foo = 'baz'
+// console.log(proxy.foo) // bar  修改为baz不成功
+
+/**********************************************************************************************************************
+ *  has(target, propKey)
+ **********************************************************************************************************************/
+// 如原对象的属性名的第一个字符是下划线，则返回false，从而不被in运算符发现，达到隐藏属性的目的。
+// let handler = {
+//   has (target, key) {
+//     if (key[0] === '_') {
+//       return false
+//     }
+//     return key in target
+//   }
+// }
+// let target = { _prop: 'foo', prop: 'foo' }
+// let proxy = new Proxy(target, handler)
+// console.log('_prop' in proxy) // false
+// console.log('prop' in proxy) // true
+// =====================================================================================================================
+// 对象不可配置或禁止扩展时，has拦截会报错。
+// let obj = { a: 10 }
+// Object.preventExtensions(obj)
+//
+// let p = new Proxy(obj, {
+//   has: function (target, prop) {
+//     return false
+//   }
+// })
+//
+// console.log('a' in p) // TypeError is thrown
+// =====================================================================================================================
+// has方法只对in运算符生效，而不对for...in循环生效
+// let stu1 = { name: '张三', score: 59 }
+// let stu2 = { name: '李四', score: 99 }
+//
+// let handler = {
+//   has (target, prop) {
+//     if (prop === 'score' && target[prop] < 60) {
+//       console.log(`${target.name} 不及格`)
+//       return false
+//     }
+//     return prop in target
+//   }
+// }
+//
+// let oproxy1 = new Proxy(stu1, handler)
+// let oproxy2 = new Proxy(stu2, handler)
+//
+// console.log('score' in oproxy1)
+// // 张三 不及格
+// // false
+//
+// console.log('score' in oproxy2)
+// // true
+//
+// for (let a in oproxy1) { // has对for循环无效
+//   console.log(oproxy1[a])
+// }
+// // 张三
+// // 59
+//
+// for (let b in oproxy2) { // has对for循环无效
+//   console.log(oproxy2[b])
+// }
+// // 李四
+// // 99
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+/**********************************************************************************************************************
+ *  deleteProperty(target, propKey)
+ **********************************************************************************************************************/
+// deleteProperty方法拦截的是delete操作，如果这个方法抛出错误或返回false，则当前属性就无法被delete命令删除。
+// var handler = {
+//   deleteProperty (target, key) {
+//     invariant(key, 'delete')
+//     return true
+//   }
+// }
+// function invariant (key, action) {
+//   if (key[0] === '_') {
+//     throw new Error(`Invalid attempt to ${action} private "${key}" property`)
+//   }
+// }
+//
+// var target = { _prop: 'foo' }
+// var proxy = new Proxy(target, handler)
+// delete proxy._prop
+// // Error: Invalid attempt to delete private "_prop" property
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+/**********************************************************************************************************************
+ *  ownKeys(target)
+ **********************************************************************************************************************/
+// ownKeys方法是用来拦截对象自身属性的读取操作，拦截的操作有：
+// Object.getOwnPropertyNames()
+// Object.getOwnPropertySymbls()
+// Object.keys()
+// for...in循环
+// let target = {
+//   a: 1,
+//   b: 2,
+//   c: 3
+// }
+// let handler = {
+//   ownKeys (target) { // ['h', 'e', 'l', 'l', 'o']
+//     return ['a', 'b', '1'] // !!!第一:只能返回数组,如果返回非数据,报错.第二:数组中只能包含target中的成员,如果都不是,返回空数组
+//     // return 1   出错
+//     // return ['1']   显示 []
+//     // return ['a']   显示 ['a']
+//     // return ['a', 'b']  显示  ['a', 'b']
+//     // return ['a', 'b', '1']  显示  ['a', 'b']
+//   }
+// }
+// let proxy = new Proxy(target, handler)
+//
+// console.log(Object.keys(proxy)) // [ 'a' ]
+
+// =====================================================================================================================
+// // 拦截第一个字符为下划线的属性名
+// let target = {
+//   _bar: 'foo',
+//   _prop: 'bar',
+//   prop: 'baz'
+// }
+//
+// let handler = {
+//   ownKeys (target) {
+//     return Reflect.ownKeys(target).filter(key => key[0] !== '_')
+//   }
+// }
+//
+// let proxy = new Proxy(target, handler)
+// for (let key of Object.keys(proxy)) {
+//   console.log(target[key])
+// }
+
+// =====================================================================================================================
+// 在使用Object.keys()时，以下三类属性会被ownKeys方法自动过滤，不会返回：
+// 目标对象不存在的属性
+// 属性名为Symbol值
+// 不可遍历(enumerable)的属性
+// let target = {
+//   a: 1,
+//   b: 2,
+//   c: 3,
+//   [Symbol.for('secret')]: '4'
+// }
+//
+// Object.defineProperty(target, 'key', {
+//   enumerable: false,
+//   configurable: true,
+//   writable: true,
+//   value: 'static'
+// })
+//
+// let handler = {
+//   ownKeys (target) {
+//     return ['a', 'd', Symbol.for('secret'), 'key']
+//   }
+// }
+//
+// let proxy = new Proxy(target, handler)
+// console.log(Object.keys(proxy))
+// =====================================================================================================================
+// 拦截Object.getOwnPropertyNames()
+// let p = new Proxy({ hello: 1 }, {
+//   ownKeys: function (target) {
+//     return ['a', 'b', 'c', 'd', '1']
+//     // return Reflect.ownKeys(target)
+//   }
+// })
+//
+// console.log(Object.getOwnPropertyNames(p)) // ['a', 'b', 'c', 'd', '1'] 不存在的属性并不会被过滤
+
+// =====================================================================================================================
+// 拦截for...in循环,与Object.keys一样,某些成员会被过滤
+// const obj = { hello: 'world' }
+// const proxy = new Proxy(obj, {
+//   ownKeys: function (target) {
+//     return ['a', 'b', 'hello']
+//   }
+// })
+//
+// for (let key in proxy) {
+//   console.log(key) // ['hello']
+// }
+// =====================================================================================================================
+// ownKeys方法返回的数组成员,只能是字符串或symbol值,如果有其他类型的值,或者返回的不是数组,就会报错
+// let obj = {}
+// let p = new Proxy(obj, {
+//   ownKeys: function (target) {
+//     return [123, true, undefined, null, {}, []]
+//   }
+// })
+//
+// Object.getOwnPropertyNames(p)
+// // 123 is not a valid property name
+// =====================================================================================================================
+// 如果目标对象自身包含不可配置的属性,则该属性必须被ownKeys方法返回,否则报错
+// let obj = {}
+// Object.defineProperty(obj, 'a', {
+//   configurable: false,
+//   enumerable: true,
+//   value: 10
+// })
+//
+// let p = new Proxy(obj, {
+//   ownKeys: function (target) {
+//     return ['b']
+//   }
+// })
+//
+// Object.getOwnPropertyNames(p)
+// Object.keys(p)
+// // 'ownKeys' on proxy: trap result did not include 'a'
+// =====================================================================================================================
+// 如果目标对象是不可扩展的，这是ownKeys方法返回的数组之中，
+// 必须包含原对象的所有属性，且不能包含多余的属性，否则报错。
+// let obj = {
+//   a: 1
+// }
+// Object.preventExtensions(obj)
+//
+// let p = new Proxy(obj, {
+//   ownKeys: function (target) {
+//     return ['a', 'b']
+//   }
+// })
+// Object.getOwnPropertyNames(p)
+// Uncaught TypeError: 'ownKeys' on proxy: trap returned extra keys but proxy target is non-extensible
+/**********************************************************************************************************************
+ *  getOwnPropertyDescriptor(target, propKey)
+ **********************************************************************************************************************/
+// // 拦截Object.getOwnPropertyDescriptor，返回一个属性描述对象或者undefined。
+// let handler = {
+//   getOwnPropertyDescriptor (target, key) {
+//     if (key[0] === '_') {
+//       return
+//     }
+//     return Object.getOwnPropertyDescriptor(target, key)
+//   }
+// }
+// let target = { _foo: 'bar', baz: 'tar' }
+// let proxy = new Proxy(target, handler)
+// Object.getOwnPropertyDescriptor(proxy, 'wat')
+// // undefined
+// Object.getOwnPropertyDescriptor(proxy, '_foo')
+// // undefined
+// Object.getOwnPropertyDescriptor(proxy, 'baz')
+// // { value: 'tar', writable: true, enumerable: true, configurable: true }
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+/**********************************************************************************************************************
+ *  defineProperty(target, propKey, propDesc)
+ **********************************************************************************************************************/
+// 拦截的Object.defineProperty操作
+// 如果目标对象不可扩展（extensible），则defineProperty不能增加目标对象上不存在的属性，否则会报错。
+// 另外，如果目标对象不可配置或不可写，则defineProperty方法不得改变这两个设置。
+// var handler = {
+//   defineProperty (target, key, descriptor) {
+//     return false // defineProperty方法返回false，导致添加新属性总是无效。
+//   }
+// }
 // var target = {}
 // var proxy = new Proxy(target, handler)
-// proxy._prop
-// proxy._prop = 'c'
+// proxy.foo = 'bar' // 不会生效
+// =====================================================================================================================
 
-// ======================================================================================================================
-// 拦截---函数调用 call apply 操作
-// 三个参数分别是
-// 目标对象，目标对象的上下文对象(this)，目标对象的参数数组
-var twice = {
-  apply (target, ctx, args) {
-    return Reflect.apply(...arguments) * 2
-  }
-}
-
-function sum (left, right) {
-  return left + right
-}
-
-let proxy = new Proxy(sum, twice)
-console.log(proxy(1, 2)) // 6
-console.log(proxy.call(null, 5, 6)) // 22
-console.log(proxy.apply(null, [7, 8])) // 30
+// =====================================================================================================================
 
 // =====================================================================================================================
 
@@ -186,6 +440,237 @@ console.log(proxy.apply(null, [7, 8])) // 30
 
 // =====================================================================================================================
 
+/**********************************************************************************************************************
+ *  preventExtensions(target)
+ **********************************************************************************************************************/
+// 拦截Object.preventExtensions()，该方法必须返回布尔值，否则自动转化为布尔值。
+// let p = new Proxy({}, {
+//   preventExtensions: function (target) {
+//     console.log('called')
+//     Object.preventExtensions(target) // 必须, 否则会报错
+//     return true
+//   }
+// })
+//
+// console.log(Object.preventExtensions(p))
+// "called"
+// {}
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+/**********************************************************************************************************************
+ *  getPrototypeOf(target)
+ **********************************************************************************************************************/
+// getPropertyOf方法主要用来拦截获取对象原型。具体来说，拦截下面这些操作：
+// // Object.prototype.__proto__
+// // Object.prototype.isPrototypeOf()
+// // Object.getPrototypeOf()
+// // Reflect.getPrototypeOf()
+// // instanceOf()
+// let proto = {}
+// let p = new Proxy({}, {
+//   getPrototypeOf (target) {
+//     return proto
+//   }
+// })
+// console.log(Object.getPrototypeOf(p) === proto) // true
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+/**********************************************************************************************************************
+ *  isExtensible(target)
+ **********************************************************************************************************************/
+// 拦截Object.isExtensible操作
+// let p = new Proxy({}, {
+//   isExtensible: function (target) {
+//     console.log('called')
+//     return true // 只能返回布尔值，如果不是将会把返回值自动转化为布尔值。
+//                 // 还有一个强限制，它的返回值必须与目标对象的isExtensible属性保持一致，否则就会抛出错误。
+//   }
+// })
+//
+// console.log(Object.isExtensible(p))
+// // "called"
+// // true
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+/**********************************************************************************************************************
+ *  setPrototypeOf(target, proto)
+ **********************************************************************************************************************/
+// 该方法只能返回布尔值，否则会自动转化为布尔值。另外如果目标对象不可扩展。
+// setPrototypeOf方法不得改变目标对象的原型。
+// 下面代码中，只要修改target的原型对象，就会报错。
+// let handler = {
+//   setPrototypeOf (target, proto) {
+//     throw new Error('Changing the prototype is forbidden')
+//   }
+// }
+// let proto = {}
+// let target = function () {}
+// let proxy = new Proxy(target, handler)
+// console.log(Object.setPrototypeOf(proxy, proto))
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+/**********************************************************************************************************************
+ *  apply(target, ctx, args) (目标对象  目标对象上下文(this) 目标对象参数数组)
+ *  拦截函数的调用，call和apply操作
+ **********************************************************************************************************************/
+// let target = function () { return 'I am the target' }
+// let handler = {
+//   apply: function () {
+//     return 'I am the proxy'
+//   }
+// }
+//
+// let p = new Proxy(target, handler)
+// console.log(p()) // p()作为函数调用时，就会被apply拦截
+// =====================================================================================================================
+// let twice = {
+//   apply (target, ctx, args) {
+//     return Reflect.apply(...arguments) * 2
+//   }
+// }
+//
+// function sum (left, right) {
+//   return left + right
+// }
+//
+// let proxy = new Proxy(sum, twice)
+// console.log(proxy(1, 2)) // 6
+// console.log(proxy.call(null, 5, 6)) // 22
+// console.log(proxy.apply(null, [7, 8])) // 30
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+/**********************************************************************************************************************
+ *  construct(target, args, newTarget)
+ **********************************************************************************************************************/
+// 用于拦截new命令
+// let P = new Proxy(function () {}, {
+//   construct: function (target, args) {
+//     console.log('called: ' + args.join(', '))
+//     return { value: args[0] * 10 } // construct方法返回的必须是一个对象，否则会报错。
+//   }
+// });
+//
+// (new P(1)).value // "called: 1"
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+/**********************************************************************************************************************
+ *  Proxy.revocable(target, handler) 创建一个可撤销的代理对象。
+ **********************************************************************************************************************/
+// let revocable = Proxy.revocable({}, {
+//   get (target, name) {
+//     return '[[' + name + ']]'
+//   }
+// })
+// let proxy = revocable.proxy
+// console.log(proxy.foo) // "[[foo]]"
+//
+// revocable.revoke() // 执行撤销方法
+//
+// proxy.foo // TypeError
+// proxy.foo = 1 // 同样 TypeError
+// delete proxy.foo // 还是 TypeError
+// typeof proxy // "object"，因为 typeof 不属于可代理操作
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+
+// =====================================================================================================================
+/*******************************************************************************************************************
+ * this 问题
+* */
+// 虽然 Proxy 可以代理针对目标对象的访问，但它不是目标对象的透明代理，
+// 即不做任何拦截的情况下，也无法保证与目标对象的行为一致。
+// 主要原因就是在 Proxy 代理的情况下，目标对象内部的this关键字会指向 Proxy 代理。
+// const target = {
+//   m: function () {
+//     console.log(this === proxy)
+//   }
+// }
+//
+// const handler = {}
+//
+// const proxy = new Proxy(target, handler)
+// target.m() // false
+// proxy.m() // true
+
+// =====================================================================================================================
+// 而有些原生对象的内部属性，只有通过正确的this才能拿到，所以proxy也无法代理这些原生对象的属性。
+// const target = new Date()
+// const handler = {}
+// const proxy = new Proxy(target, handler)
+//
+// proxy.getDate()
+// TypeError: this is not a Date object.
+
+// =====================================================================================================================
+// getDate方法只能在Date对象的实例上面拿到，如果this不是Date就会报错。如果this绑定原始对象，就可以解决这个问题。
+// const target = new Date('2015-01-01')
+// const handler = {
+//   get (target, prop) {
+//     if (prop === 'getDate') {
+//       return target.getDate.bind(target) // 绑定原始对象
+//     }
+//     return Reflect.get(target, prop)
+//   }
+// }
+// const proxy = new Proxy(target, handler)
+//
+// console.log(proxy.getDate()) // 1
 // =====================================================================================================================
 
 // =====================================================================================================================

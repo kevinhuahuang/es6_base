@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>代理Proxy实例</title>
+    <script>
+        // 实现属性的链式操作（将属性的读取转换为执行一个函数）
+        let pipe = (function () { //pipe是一个立即执行函数，返回一个函数，这个函数返回一个代理实例
+            return function (value) {
+                let funcStack = [];
+                let oproxy = new Proxy({} , {
+                    get : function (pipeObject, fnName) {
+                        if (fnName === 'get') {
+                            return funcStack.reduce(function (val, fn) { // reduce接收一个函数作为累加器，数组中的第个值（从左到右开始缩减）
+                                return fn(val);
+                            },value); // value传递给函数的初始值, 即下面实例中的3
+                        }
+                        funcStack.push(window[fnName]); // window浏览器的全局对象
+                        return oproxy; // get操作返回代理实例
+                    }
+                });
+
+                return oproxy;
+            }
+        }());
+
+        let double = n => n * 2; // 读取属性时将执行的函数 window[fnName]
+        let pow    = n => n * n;
+        let reverseInt = n => n.toString().split("").reverse().join("") | 0;
+
+        function getGetValue () {
+            document.getElementById('display').value = pipe(3).double.pow.reverseInt.get
+            // 执行过程
+        }
+        //==============================================================================================================
+        // 实现生成各种DOM节点的能用函数
+        const dom = new Proxy({}, {
+            get(target, property) {
+                return function(attrs = {}, ...children) { // 返回一个函数
+                    const el = document.createElement(property)
+                    for (let prop of Object.keys(attrs)) {
+                        el.setAttribute(prop, attrs[prop])  // 设置DOM节点属性
+                    }
+                    for (let child of children) {
+                        if (typeof child === 'string') {
+                            child = document.createTextNode(child) // 设置DOM节点文本
+                        }
+                        el.appendChild(child)
+                    }
+                    return el // 返回DOM节点
+                }
+            }
+        })
+
+        const el = dom.div({},
+            'Hello, my name is',
+            dom.a({href:  '//example.com'}, 'Mark'),
+            '. I like:',
+            dom.ul({},
+                dom.li({}, 'The web'),
+                dom.li({}, 'Food'),
+                dom.li({}, '...actually that\'s it')))
+
+
+        function action () {
+            document.body.appendChild(el)
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="display">
+<button onclick="getGetValue()">实现属性的链式操作</button>
+<button onclick="action()">实现一个生成各种DOM节点的通用函数dom</button>
+</body>
+</html>
