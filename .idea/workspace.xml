@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vagrant.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/call_apply_bind.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proxy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/object.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/proxy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/reflect.js" beforeDir="false" afterPath="$PROJECT_DIR$/reflect.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,8 +24,8 @@
       <file leaf-file-name="example_promise.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example_promise.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="110" column="14" lean-forward="true" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
+            <state relative-caret-position="2090">
+              <caret line="110" column="14" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -38,8 +33,8 @@
       <file leaf-file-name="async.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+            <state relative-caret-position="3249">
+              <caret line="171" selection-start-line="171" selection-end-line="171" />
             </state>
           </provider>
         </entry>
@@ -47,17 +42,29 @@
       <file leaf-file-name="proxy.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/proxy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
+            <state relative-caret-position="11495">
               <caret line="607" selection-start-line="607" selection-end-line="609" selection-end-column="120" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reflect.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reflect.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reflect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="342" lean-forward="true" selection-start-line="342" selection-end-line="342" />
+            <state relative-caret-position="274">
+              <caret line="361" selection-start-line="361" selection-end-line="364" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="object.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/object.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,7 +72,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
+            <state relative-caret-position="114">
               <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
             </state>
           </provider>
@@ -75,7 +82,7 @@
         <entry file="file://$PROJECT_DIR$/.eslintrc.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
-              <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -83,8 +90,8 @@
       <file leaf-file-name="generator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
+            <state relative-caret-position="4503">
+              <caret line="238" selection-start-line="238" selection-end-line="238" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -97,8 +104,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -132,6 +139,7 @@
         <option value="$PROJECT_DIR$/proxy.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/reflect.js" />
+        <option value="$PROJECT_DIR$/object.js" />
       </list>
     </option>
   </component>
@@ -146,140 +154,13 @@
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/node_modules/@babel/code-frame/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/@babel/highlight/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/acorn-jsx/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/acorn/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ajv/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ansi-escapes/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/argparse/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/astral-regex/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/balanced-match/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/brace-expansion/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/callsites/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/chalk/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/chardet/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/cli-cursor/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/cli-width/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/color-convert/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/color-name/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/concat-map/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/cross-spawn/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/deep-is/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/doctrine/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/emoji-regex/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/escape-string-regexp/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/eslint-scope/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/eslint-utils/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/eslint-visitor-keys/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/eslint/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/espree/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/esprima/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/esquery/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/esrecurse/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/estraverse/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/esutils/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/external-editor/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/fast-deep-equal/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/fast-json-stable-stringify/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/fast-levenshtein/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/figures/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/file-entry-cache/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/flat-cache/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/flatted/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/fs.realpath/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/functional-red-black-tree/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/glob/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/globals/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ignore/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/import-fresh/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/imurmurhash/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/inflight/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/inquirer/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/inquirer/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/inquirer/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/is-fullwidth-code-point/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/is-promise/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/isexe/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/js-tokens/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/js-yaml/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/json-schema-traverse/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/json-stable-stringify-without-jsonify/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/levn/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/lodash/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mimic-fn/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/minimatch/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/minimist/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mkdirp/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mute-stream/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/natural-compare/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/nice-try/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/once/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/onetime/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/optionator/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/os-tmpdir/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/parent-module/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/path-is-absolute/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/path-is-inside/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/path-key/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/prelude-ls/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/progress/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/punycode/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/regexpp/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/resolve-from/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/restore-cursor/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rimraf/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/run-async/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/ajax/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/internal-compatibility/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/operators/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/src/ajax/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/src/internal-compatibility/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/src/operators/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/src/testing/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/src/webSocket/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/testing/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/rxjs/webSocket/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/safer-buffer/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/semver/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/shebang-command/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/shebang-regex/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/signal-exit/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/slice-ansi/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/sprintf-js/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/string-width/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/strip-json-comments/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/table/node_modules/ansi-regex/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/table/node_modules/string-width/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/table/node_modules/strip-ansi/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/table/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/text-table/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/through/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/tmp/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/tslib/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/type-check/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/uri-js/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/which/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/wordwrap/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/wrappy/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/write/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="559" />
-    <option name="y" value="66" />
-    <option name="width" value="1256" />
+    <option name="x" value="529" />
+    <option name="y" value="79" />
+    <option name="width" value="1337" />
     <option name="height" value="952" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -307,7 +188,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.eslintrc.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -369,25 +250,26 @@
       <option name="presentableId" value="Default" />
       <updated>1551664913355</updated>
       <workItem from="1551664914930" duration="18546000" />
-      <workItem from="1551746609976" duration="60926000" />
+      <workItem from="1551746609976" duration="63001000" />
+      <workItem from="1552017045165" duration="1943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79472000" />
+    <option name="totallyTimeSpent" value="83490000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="559" y="66" width="1256" height="952" extended-state="0" />
+    <frame x="529" y="79" width="1337" height="952" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1592775" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14934565" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2972973" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2972973" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.37793428" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3046683" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -413,6 +295,58 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/example_promise.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2090">
+          <caret line="110" column="14" lean-forward="true" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3249">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11495">
+          <caret line="607" selection-start-line="607" selection-end-line="609" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4503">
+          <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reflect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7049">
+          <caret line="371" column="30" lean-forward="true" selection-start-line="371" selection-start-column="30" selection-end-line="371" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example_promise.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="36" selection-start-line="2" selection-start-column="36" selection-end-line="2" selection-end-column="36" />
         </state>
@@ -432,8 +366,8 @@
     <entry file="file://$PROJECT_DIR$/node_modules/generator.js" />
     <entry file="file://$PROJECT_DIR$/example_promise.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="110" column="14" lean-forward="true" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
+        <state relative-caret-position="2090">
+          <caret line="110" column="14" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -447,14 +381,14 @@
     <entry file="file://$PROJECT_DIR$/.eslintrc.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="238" lean-forward="true" selection-start-line="238" selection-end-line="238" />
+        <state relative-caret-position="4503">
+          <caret line="238" selection-start-line="238" selection-end-line="238" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -463,21 +397,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/async.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
+        <state relative-caret-position="3249">
+          <caret line="171" selection-start-line="171" selection-end-line="171" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/reflect.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proxy_reflect.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/reflect.html" />
+    <entry file="file://$PROJECT_DIR$/proxy_reflect.js" />
     <entry file="file://$PROJECT_DIR$/proxy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-224">
@@ -494,22 +420,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/proxy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
+        <state relative-caret-position="11495">
           <caret line="607" selection-start-line="607" selection-end-line="609" selection-end-column="120" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
+        <state relative-caret-position="114">
           <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/reflect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="342" lean-forward="true" selection-start-line="342" selection-end-line="342" />
+        <state relative-caret-position="274">
+          <caret line="361" selection-start-line="361" selection-end-line="364" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

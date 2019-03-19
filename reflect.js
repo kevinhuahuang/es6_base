@@ -361,7 +361,7 @@
 // console.log(obj)
 /**********************************************************************************************************************
  *    Reflect.setPrototypeOf(target, prototype)
- *   Reflect.setPrototypeOf()方法和Object.setPrototypeOf差不多一样样的， 会给对象设置原型， 就是更改对象的__proto__属性了
+ *   Reflect.setPrototypeOf()方法和Object.setPrototypeOf差不多一样， 会给对象设置原型， 就是更改对象的__proto__属性了
  **********************************************************************************************************************/
 // Reflect.setPrototypeOf({}, Object.prototype) // 输出true
 //
