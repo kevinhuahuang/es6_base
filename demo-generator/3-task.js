@@ -1,25 +1,25 @@
-function prepare (success) {
+function prepare (success) { // success是回调函数
   setTimeout(function () {
     console.log('prepare chicken')
     success()
   }, 1000)
 }
 
-function fired (success) {
+function fired (success) { // success是回调函数
   setTimeout(function () {
     console.log('fire chicken')
     success()
   }, 1000)
 }
 
-function stewed (success) {
+function stewed (success) { // success是回调函数
   setTimeout(function () {
     console.log('stewed chicken')
     success()
   }, 1000)
 }
 
-function add (success) {
+function add (success) { // success是回调函数
   setTimeout(function () {
     console.log('add chicken')
     success()
@@ -33,7 +33,7 @@ function serve (success) { // success是回调函数
   }, 1000)
 }
 
-function run (fn) {
+function run (fn) { // generator自动运行函数
   const gen = fn()
   function next () { // Thunk的回调函数
     const result = gen.next()
@@ -49,7 +49,7 @@ function run (fn) {
 }
 
 function * task () {
-  yield prepare
+  yield prepare // next() 操作返回 prepare是一个函数，这个函数接收一个回调函数为参数
   yield fired
   yield stewed
   yield add

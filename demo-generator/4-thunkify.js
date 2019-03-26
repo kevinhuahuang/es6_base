@@ -15,5 +15,6 @@ const thunkify = require('thunkify')
 const thunk = thunkify(fs.readFile)
 const readFileThunk = thunk('../data.json', 'utf-8')
 readFileThunk((err, data) => {
+  if (err) throw err
   console.log(data)
 })

@@ -6,8 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-generator/1-fibG.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/1-fibG.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-generator/2-thunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/2-thunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-generator/3-task.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/3-task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-generator/4-thunkify.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/4-thunkify.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-generator/5-thunk-use.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/5-thunk-use.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-generator/6-auto.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/6-auto.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-generator/7-co.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/7-co.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/demo-async/1-base.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -33,17 +36,17 @@
       <file leaf-file-name="1-fibG.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-generator/1-fibG.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+            <state relative-caret-position="304">
+              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2-thunk.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2-thunk.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-generator/2-thunk.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+            <state relative-caret-position="133">
+              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -54,8 +57,8 @@
       <file leaf-file-name="3-task.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-generator/3-task.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+            <state relative-caret-position="627">
+              <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -63,8 +66,8 @@
       <file leaf-file-name="4-thunkify.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-generator/4-thunkify.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="8" selection-start-line="11" selection-end-line="13" />
+            <state relative-caret-position="152">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -72,8 +75,8 @@
       <file leaf-file-name="5-thunk-use.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-generator/5-thunk-use.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+            <state relative-caret-position="171">
+              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -81,8 +84,8 @@
       <file leaf-file-name="6-auto.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-generator/6-auto.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="10">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -93,17 +96,17 @@
       <file leaf-file-name="7-co.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-generator/7-co.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="304">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="8-koa.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="8-koa.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo-generator/8-koa.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+            <state relative-caret-position="152">
+              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -112,7 +115,7 @@
         <entry file="file://$PROJECT_DIR$/demo-promise/4-race.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="874">
-              <caret line="46" column="20" lean-forward="true" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -167,12 +170,7 @@
         <option value="$PROJECT_DIR$/demo-generator/co-demo.js" />
         <option value="$PROJECT_DIR$/demo-generator/koa-demo.js" />
         <option value="$PROJECT_DIR$/demo-generator/auto.js" />
-        <option value="$PROJECT_DIR$/demo-generator/3-task.js" />
         <option value="$PROJECT_DIR$/demo-generator/8-koa.js" />
-        <option value="$PROJECT_DIR$/demo-generator/4-thunkify.js" />
-        <option value="$PROJECT_DIR$/demo-generator/5-thunk-use.js" />
-        <option value="$PROJECT_DIR$/demo-generator/6-auto.js" />
-        <option value="$PROJECT_DIR$/demo-generator/7-co.js" />
         <option value="$PROJECT_DIR$/demo-async/6-for.js" />
         <option value="$PROJECT_DIR$/demo-async/8-try-catch.js" />
         <option value="$PROJECT_DIR$/demo-async/2-expresion.js" />
@@ -190,6 +188,11 @@
         <option value="$PROJECT_DIR$/demo-promise/4-race.js" />
         <option value="$PROJECT_DIR$/demo-generator/1-fibG.js" />
         <option value="$PROJECT_DIR$/demo-generator/2-thunk.js" />
+        <option value="$PROJECT_DIR$/demo-generator/3-task.js" />
+        <option value="$PROJECT_DIR$/demo-generator/4-thunkify.js" />
+        <option value="$PROJECT_DIR$/demo-generator/5-thunk-use.js" />
+        <option value="$PROJECT_DIR$/demo-generator/6-auto.js" />
+        <option value="$PROJECT_DIR$/demo-generator/7-co.js" />
       </list>
     </option>
   </component>
@@ -208,8 +211,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="763" />
-    <option name="width" value="1144" />
+    <option name="x" value="496" />
+    <option name="y" value="12" />
+    <option name="width" value="1280" />
     <option name="height" value="1002" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -220,6 +224,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -246,13 +251,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../share_kindergarten" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -285,26 +289,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.2-thunk.js">
-    <configuration name="1-fibG.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="1-fibG.js" working-dir="$PROJECT_DIR$/demo-generator" />
-    <configuration name="2-thunk.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="2-thunk.js" working-dir="$PROJECT_DIR$/demo-generator" />
-    <configuration name="3-all.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="3-all.js" working-dir="$PROJECT_DIR$/demo-promise" />
-    <configuration name="3-promise.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="3-promise.js" working-dir="$PROJECT_DIR$/demo-promise" />
-    <configuration name="4-race.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="4-race.js" working-dir="$PROJECT_DIR$/demo-promise" />
+  <component name="RunManager" selected="Node.js.8-koa.js">
+    <configuration name="4-thunkify.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="4-thunkify.js" working-dir="$PROJECT_DIR$/demo-generator" />
+    <configuration name="5-thunk-use.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="5-thunk-use.js" working-dir="$PROJECT_DIR$/demo-generator" />
+    <configuration name="6-auto.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="6-auto.js" working-dir="$PROJECT_DIR$/demo-generator" />
+    <configuration name="7-co.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="7-co.js" working-dir="$PROJECT_DIR$/demo-generator" />
+    <configuration name="8-koa.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="8-koa.js" working-dir="$PROJECT_DIR$/demo-generator" />
     <list>
-      <item itemvalue="Node.js.3-promise.js" />
-      <item itemvalue="Node.js.3-all.js" />
-      <item itemvalue="Node.js.4-race.js" />
-      <item itemvalue="Node.js.1-fibG.js" />
-      <item itemvalue="Node.js.2-thunk.js" />
+      <item itemvalue="Node.js.4-thunkify.js" />
+      <item itemvalue="Node.js.5-thunk-use.js" />
+      <item itemvalue="Node.js.6-auto.js" />
+      <item itemvalue="Node.js.7-co.js" />
+      <item itemvalue="Node.js.8-koa.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.2-thunk.js" />
-        <item itemvalue="Node.js.1-fibG.js" />
-        <item itemvalue="Node.js.4-race.js" />
-        <item itemvalue="Node.js.3-all.js" />
-        <item itemvalue="Node.js.3-promise.js" />
+        <item itemvalue="Node.js.8-koa.js" />
+        <item itemvalue="Node.js.7-co.js" />
+        <item itemvalue="Node.js.6-auto.js" />
+        <item itemvalue="Node.js.5-thunk-use.js" />
+        <item itemvalue="Node.js.4-thunkify.js" />
       </list>
     </recent_temporary>
   </component>
@@ -324,23 +328,25 @@
       <workItem from="1552985222823" duration="1683000" />
       <workItem from="1553072014968" duration="962000" />
       <workItem from="1553221906015" duration="3765000" />
-      <workItem from="1553385365516" duration="5860000" />
+      <workItem from="1553385365516" duration="6094000" />
+      <workItem from="1553473815617" duration="1819000" />
+      <workItem from="1553571522954" duration="2081000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95760000" />
+    <option name="totallyTimeSpent" value="99894000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="763" y="0" width="1144" height="1002" extended-state="0" />
+    <frame x="496" y="12" width="1280" height="1002" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24321881" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21658616" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2962963" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26041666" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.28587964" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -469,9 +475,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -507,9 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -523,12 +523,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-promise/3-firstPromise.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-promise/4-all_race.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-promise/3-firstPromise.css" />
+    <entry file="file://$PROJECT_DIR$/demo-promise/4-all_race.js" />
     <entry file="file://$PROJECT_DIR$/demo-promise/1-promise.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -543,13 +539,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-promise/3-promise.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="37" column="10" lean-forward="true" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-promise/3-promise.js" />
     <entry file="file://$PROJECT_DIR$/demo-promise/3-all.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -560,42 +550,59 @@
     <entry file="file://$PROJECT_DIR$/demo-promise/4-race.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
-          <caret line="46" column="20" lean-forward="true" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-async/1-base.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-generator/3-task.js">
+    <entry file="file://$PROJECT_DIR$/demo-generator/1-fibG.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="53" column="14" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+        <state relative-caret-position="304">
+          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-generator/2-thunk.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-generator/4-thunkify.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="8" selection-start-line="11" selection-end-line="13" />
+        <state relative-caret-position="152">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-generator/5-thunk-use.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+        <state relative-caret-position="171">
+          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-generator/3-task.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-generator/6-auto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        <state relative-caret-position="10">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -604,32 +611,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-generator/7-co.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="304">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-generator/8-koa.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-generator/1-fibG.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="22" column="3" lean-forward="true" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-generator/2-thunk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="152">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
         </state>
       </provider>
     </entry>

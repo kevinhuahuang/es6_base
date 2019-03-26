@@ -6,6 +6,7 @@ const thunkify = require('thunkify')
 function run (generator) {
   const g = generator()
   function next (err, data) {
+    if (err) throw err
     const result = g.next(data) // 返回 {value:thunk函数, done: ...}
     if (result.done) {
       return
