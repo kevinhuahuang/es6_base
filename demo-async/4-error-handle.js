@@ -2,7 +2,7 @@
 function sleep (second) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      reject('want to sleep~')
+      reject(new Error('want to sleep~')) // reject('want to sleep') eslint会报错 prefer-promise-reject-error
     }, second)
   })
 }

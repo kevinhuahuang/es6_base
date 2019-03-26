@@ -2,7 +2,7 @@
 // 但是它最主要的意图是用来等待Promise对象的状态被resolved,
 // 如果await的是promise对象会造成异步函数停止执行并且等待promise的解决
 // 如果等待的是表达式，会立即执行
-function sleep (second) {
+function sleep (second) { // 返回一个Promise对象
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(' enough sleep~')
@@ -17,8 +17,10 @@ function normalFunc () {
 async function awaitDemo () {
   await normalFunc()
   console.log('happening...')
-  let result = await sleep(2000)
-  console.log(result)
+  let result = await sleep(2000) // result保存 sleep中resolve传出的参数
+  return result // then方法的参数
 }
 
-awaitDemo()
+awaitDemo().then((data) => {
+  console.log(data)
+})

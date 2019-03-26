@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/demo-async/9-async-promise.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-generator/3-task.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/3-task.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-generator/4-thunkify.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/4-thunkify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-generator/5-thunk-use.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/5-thunk-use.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-generator/6-auto.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/6-auto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-generator/7-co.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-generator/7-co.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-async/1-base.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-async/1-base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-async/2-expresion.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-async/2-expresion.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-async/3-async-request.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-async/3-async-request.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-async/4-error-handle.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-async/4-error-handle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-async/7-read-file.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-async/7-read-file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-async/8-try-catch.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-async/8-try-catch.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,95 +29,97 @@
       <file leaf-file-name="1-base.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-async/1-base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="171">
+              <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="1-fibG.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-generator/1-fibG.js">
+      <file leaf-file-name="2-expresion.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-async/2-expresion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="266">
+              <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2-thunk.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-generator/2-thunk.js">
+      <file leaf-file-name="3-async-request.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-async/3-async-request.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6-for.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-async/6-for.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="7-read-file.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-async/7-read-file.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="8-try-catch.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-async/8-try-catch.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="9-async-promise.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo-async/9-async-promise.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="4-error-handle.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-async/4-error-handle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5-parallel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-async/5-parallel.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
-              <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3-task.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-generator/3-task.js">
+      <file leaf-file-name="1-promise.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-promise/1-promise.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4-thunkify.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-generator/4-thunkify.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="5-thunk-use.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-generator/5-thunk-use.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="6-auto.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-generator/6-auto.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="7-co.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-generator/7-co.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="8-koa.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo-generator/8-koa.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="4-race.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-promise/4-race.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
+            <state relative-caret-position="315">
+              <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -172,13 +176,7 @@
         <option value="$PROJECT_DIR$/demo-generator/auto.js" />
         <option value="$PROJECT_DIR$/demo-generator/8-koa.js" />
         <option value="$PROJECT_DIR$/demo-async/6-for.js" />
-        <option value="$PROJECT_DIR$/demo-async/8-try-catch.js" />
-        <option value="$PROJECT_DIR$/demo-async/2-expresion.js" />
-        <option value="$PROJECT_DIR$/demo-async/3-async-request.js" />
-        <option value="$PROJECT_DIR$/demo-async/4-error-handle.js" />
         <option value="$PROJECT_DIR$/demo-async/5-parallel.js" />
-        <option value="$PROJECT_DIR$/demo-async/7-read-file.js" />
-        <option value="$PROJECT_DIR$/demo-async/1-base.js" />
         <option value="$PROJECT_DIR$/demo-promise/3-firstPromise.css" />
         <option value="$PROJECT_DIR$/demo-promise/4-all_race.js" />
         <option value="$PROJECT_DIR$/demo-promise/1-promise.js" />
@@ -193,6 +191,13 @@
         <option value="$PROJECT_DIR$/demo-generator/5-thunk-use.js" />
         <option value="$PROJECT_DIR$/demo-generator/6-auto.js" />
         <option value="$PROJECT_DIR$/demo-generator/7-co.js" />
+        <option value="$PROJECT_DIR$/demo-async/1-base.js" />
+        <option value="$PROJECT_DIR$/demo-async/2-expresion.js" />
+        <option value="$PROJECT_DIR$/demo-async/3-async-request.js" />
+        <option value="$PROJECT_DIR$/demo-async/4-error-handle.js" />
+        <option value="$PROJECT_DIR$/demo-async/7-read-file.js" />
+        <option value="$PROJECT_DIR$/demo-async/8-try-catch.js" />
+        <option value="$PROJECT_DIR$/demo-async/9-async-promise.js" />
       </list>
     </option>
   </component>
@@ -211,8 +216,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="496" />
-    <option name="y" value="12" />
+    <option name="x" value="716" />
+    <option name="y" value="32" />
     <option name="width" value="1280" />
     <option name="height" value="1002" />
   </component>
@@ -289,26 +294,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.8-koa.js">
-    <configuration name="4-thunkify.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="4-thunkify.js" working-dir="$PROJECT_DIR$/demo-generator" />
-    <configuration name="5-thunk-use.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="5-thunk-use.js" working-dir="$PROJECT_DIR$/demo-generator" />
-    <configuration name="6-auto.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="6-auto.js" working-dir="$PROJECT_DIR$/demo-generator" />
-    <configuration name="7-co.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="7-co.js" working-dir="$PROJECT_DIR$/demo-generator" />
-    <configuration name="8-koa.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="8-koa.js" working-dir="$PROJECT_DIR$/demo-generator" />
+  <component name="RunManager" selected="Node.js.8-try-catch.js">
+    <configuration name="3-async-request.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="3-async-request.js" working-dir="$PROJECT_DIR$/demo-async" />
+    <configuration name="4-error-handle.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="4-error-handle.js" working-dir="$PROJECT_DIR$/demo-async" />
+    <configuration name="5-parallel.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="5-parallel.js" working-dir="$PROJECT_DIR$/demo-async" />
+    <configuration name="7-read-file.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="7-read-file.js" working-dir="$PROJECT_DIR$/demo-async" />
+    <configuration name="8-try-catch.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="8-try-catch.js" working-dir="$PROJECT_DIR$/demo-async" />
     <list>
-      <item itemvalue="Node.js.4-thunkify.js" />
-      <item itemvalue="Node.js.5-thunk-use.js" />
-      <item itemvalue="Node.js.6-auto.js" />
-      <item itemvalue="Node.js.7-co.js" />
-      <item itemvalue="Node.js.8-koa.js" />
+      <item itemvalue="Node.js.3-async-request.js" />
+      <item itemvalue="Node.js.4-error-handle.js" />
+      <item itemvalue="Node.js.5-parallel.js" />
+      <item itemvalue="Node.js.7-read-file.js" />
+      <item itemvalue="Node.js.8-try-catch.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.8-koa.js" />
-        <item itemvalue="Node.js.7-co.js" />
-        <item itemvalue="Node.js.6-auto.js" />
-        <item itemvalue="Node.js.5-thunk-use.js" />
-        <item itemvalue="Node.js.4-thunkify.js" />
+        <item itemvalue="Node.js.8-try-catch.js" />
+        <item itemvalue="Node.js.7-read-file.js" />
+        <item itemvalue="Node.js.5-parallel.js" />
+        <item itemvalue="Node.js.4-error-handle.js" />
+        <item itemvalue="Node.js.3-async-request.js" />
       </list>
     </recent_temporary>
   </component>
@@ -330,25 +335,25 @@
       <workItem from="1553221906015" duration="3765000" />
       <workItem from="1553385365516" duration="6094000" />
       <workItem from="1553473815617" duration="1819000" />
-      <workItem from="1553571522954" duration="2081000" />
+      <workItem from="1553571522954" duration="5527000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99894000" />
+    <option name="totallyTimeSpent" value="103340000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="496" y="12" width="1280" height="1002" extended-state="0" />
+    <frame x="716" y="32" width="1280" height="1002" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21658616" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22302738" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26041666" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.25925925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.28587964" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.37962964" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -368,17 +373,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.eslintrc.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-generator/generator.js" />
     <entry file="file://$PROJECT_DIR$/reflect.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -471,51 +469,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-async/2-expresion.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-async/3-async-request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-async/4-error-handle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-async/5-parallel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-async/7-read-file.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="16" lean-forward="true" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-async/8-try-catch.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-async/6-for.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-promise/example_promise.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -525,13 +478,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-promise/3-firstPromise.css" />
     <entry file="file://$PROJECT_DIR$/demo-promise/4-all_race.js" />
-    <entry file="file://$PROJECT_DIR$/demo-promise/1-promise.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-promise/2-runAsync.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -551,13 +497,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
           <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-async/1-base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -618,8 +557,86 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-generator/8-koa.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-promise/1-promise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="23" lean-forward="true" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-async/1-base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-async/2-expresion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-async/4-error-handle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-async/5-parallel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-async/3-async-request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-async/6-for.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-async/7-read-file.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-async/8-try-catch.js">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-async/9-async-promise.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="41" column="33" lean-forward="true" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
