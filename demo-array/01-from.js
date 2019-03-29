@@ -42,16 +42,16 @@ let arrayNotSimilar = {
   age: 35,
   weight: '70KG',
   height: '175cm',
-  length: 4
+  length: 4 // 返回长度为4，元素为undefined的数组
 }
 let aryNotSimilar = Array.from(arrayNotSimilar)
-console.log('非类数组对象转数组(返回空数组)：')
+console.log('非类数组对象转数组：')
 console.log(aryNotSimilar)
 
 let arraySimilar = {
   0: 'kevin',
-  2: 35, // 位于数组的第三位
-  1: '70KG', // 位于数组的第二位
+  2: 35, // 对应数组中的index为2
+  1: '70KG', // 对应数组中的index为1
   3: '175cm',
   length: 4 // 必须指定长度，不指定长度，返回空数组
   // 指定长度比对象实际长度小，将截取
@@ -61,6 +61,50 @@ let arySimilar = Array.from(arraySimilar)
 console.log('类数组对象转数组：')
 console.log(arySimilar)
 
-// 接受this为参数
+/* 接受this为第三个参数
+* 将数据和对象分离，将不同的方法封装到不同的对象中去，处理方法采用相同的名字。
+在调用Array.from对数据对象进行转换时，可以将不同的处理对象按实际情况进行注入，以得到不同的结果，适合解耦。
+这种做法是模板设计模式的应用，有点类似于依赖注入 */
+let diObj = {
+  handle: function (n) {
+    return n + 2
+  }
+}
+
+let kevin = {
+  0: 'english',
+  1: 'kevin',
+  setKeyValue: function (key, value) {
+    let obj = {} // 创建对象不推荐使用 new Object()
+    obj[key] = value
+    return obj
+  }
+}
+
+let hua = {
+  0: '中文',
+  1: '华',
+  setKeyValue: function (key, value) {
+    let obj = {} // 创建对象不推荐使用 new Object()
+    if (key === 'language') {
+      key = '语言'
+    } else if (key === 'name') {
+      key = '名字'
+    }
+    obj[key] = value
+    return obj
+  }
+}
+
+let kevinAry = Array.from(['language', 'name'], function (value, index) { // 此处不要使用箭头函数，否则this指向的是数组
+  return this.setKeyValue(value, this[index])
+}, kevin)
+
+let huaAry = Array.from(['language', 'name'], function (value, index) { // 此处不要使用箭头函数，否则this指向的是数组return this.setKeyValue(value, this[index])
+  return this.setKeyValue(value, this[index])
+}, hua)
+console.log('设置第三个参数this: ')
+console.log(kevinAry)
+console.log(huaAry)
 
 // Array.from 参数是一个数组 返回一模一样的数组

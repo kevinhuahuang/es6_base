@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-array/01-from.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-async/6-for.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-async/6-for.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-array/01-from.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-array/01-from.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -69,8 +67,8 @@
       <file leaf-file-name="01-from.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo-array/01-from.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+            <state relative-caret-position="509">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -145,6 +143,7 @@
       <find>module</find>
       <find>revocable</find>
       <find>Proxy.</find>
+      <find>kevin</find>
     </findStrings>
     <replaceStrings>
       <replace>Reflect</replace>
@@ -222,8 +221,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="519" />
-    <option name="y" value="51" />
+    <option name="x" value="665" />
+    <option name="y" value="15" />
     <option name="width" value="1441" />
     <option name="height" value="1002" />
   </component>
@@ -332,15 +331,15 @@
       <workItem from="1553385365516" duration="6094000" />
       <workItem from="1553473815617" duration="1819000" />
       <workItem from="1553571522954" duration="6666000" />
-      <workItem from="1553848611490" duration="3761000" />
+      <workItem from="1553848611490" duration="5939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108240000" />
+    <option name="totallyTimeSpent" value="110418000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="519" y="51" width="1441" height="1002" extended-state="0" />
+    <frame x="665" y="15" width="1441" height="1002" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19743407" />
@@ -348,7 +347,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25925925" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2534722" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.37962964" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -639,8 +638,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-array/01-from.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        <state relative-caret-position="509">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
