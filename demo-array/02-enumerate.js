@@ -43,5 +43,5 @@ console.log(aryPublic.filter((value, index, ary) => {
 }))
 
 console.log(aryPublic.map((value, index, ary) => {
-    return value + ''
+  return value + ''
 }))
