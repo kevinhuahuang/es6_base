@@ -3,7 +3,13 @@
 * https://www.cnblogs.com/xiaohuochai/p/5721552.html
 * */
 
-
+/*
+* 概念
+* 实例对象
+* 原型对象
+* 原型
+* 原型链
+* */
 
 // 通过构造函数的new操作创建的对象是实例对象。可以用一个构造函数，构造多个实例对象
 
@@ -39,8 +45,7 @@ var f1 = new Foo;
 console.log(f1.constructor === Foo);//true
 
 
-// proto
-　　// 实例对象有一个proto属性，指向该实例对象对应的原型对象
+// proto 实例对象有一个proto属性，指向该实例对象对应的原型对象
 
 function Foo(){};
 var f1 = new Foo;
