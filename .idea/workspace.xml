@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-object/00-create.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-object/01-assign.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-object/02-enumerata.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-array/02-enumerate.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-array/02-enumerate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-object/00-create.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-object/00-create.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -89,18 +85,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="01-assign.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="01-assign.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-object/01-assign.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="110" column="34" lean-forward="true" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+            <state relative-caret-position="154">
+              <caret line="106" selection-start-line="106" selection-end-line="106" selection-end-column="65" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="00-create.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="00-create.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo-object/00-create.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-450">
+              <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="02-enumerata.js" pinned="false" current-in-tab="false">
@@ -194,8 +197,8 @@
         <option value="$PROJECT_DIR$/demo-array/01-from.js" />
         <option value="$PROJECT_DIR$/demo-array/02-enumerate.js" />
         <option value="$PROJECT_DIR$/demo-object/02-enumerata.js" />
-        <option value="$PROJECT_DIR$/demo-object/00-create.js" />
         <option value="$PROJECT_DIR$/demo-object/01-assign.js" />
+        <option value="$PROJECT_DIR$/demo-object/00-create.js" />
       </list>
     </option>
   </component>
@@ -214,9 +217,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="613" />
+    <option name="x" value="813" />
     <option name="y" value="27" />
-    <option name="width" value="1441" />
+    <option name="width" value="1241" />
     <option name="height" value="1002" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -287,26 +290,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.01-assign.js">
+  <component name="RunManager" selected="Node.js.00-create.js">
+    <configuration name="00-create.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="00-create.js" working-dir="$PROJECT_DIR$/demo-object" />
     <configuration name="01-assign.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="01-assign.js" working-dir="$PROJECT_DIR$/demo-object" />
     <configuration name="01-from.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="01-from.js" working-dir="$PROJECT_DIR$/demo-array" />
     <configuration name="02-enumerate.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="02-enumerate.js" working-dir="$PROJECT_DIR$/demo-array" />
     <configuration name="6-for.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="6-for.js" working-dir="$PROJECT_DIR$/demo-async" />
-    <configuration name="8-try-catch.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="8-try-catch.js" working-dir="$PROJECT_DIR$/demo-async" />
     <list>
-      <item itemvalue="Node.js.8-try-catch.js" />
       <item itemvalue="Node.js.6-for.js" />
       <item itemvalue="Node.js.01-from.js" />
       <item itemvalue="Node.js.02-enumerate.js" />
       <item itemvalue="Node.js.01-assign.js" />
+      <item itemvalue="Node.js.00-create.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.00-create.js" />
         <item itemvalue="Node.js.01-assign.js" />
         <item itemvalue="Node.js.02-enumerate.js" />
         <item itemvalue="Node.js.01-from.js" />
         <item itemvalue="Node.js.6-for.js" />
-        <item itemvalue="Node.js.8-try-catch.js" />
       </list>
     </recent_temporary>
   </component>
@@ -330,23 +333,23 @@
       <workItem from="1553473815617" duration="1819000" />
       <workItem from="1553571522954" duration="6666000" />
       <workItem from="1553848611490" duration="9449000" />
-      <workItem from="1553907406623" duration="6580000" />
+      <workItem from="1553907406623" duration="8074000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120508000" />
+    <option name="totallyTimeSpent" value="122002000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="613" y="27" width="1441" height="1002" extended-state="0" />
+    <frame x="813" y="27" width="1241" height="1002" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19743407" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23025769" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3912037" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3912037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.37962964" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -636,13 +639,20 @@
     <entry file="file://$PROJECT_DIR$/demo-object/02-enumerata.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-object/00-create.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-object/01-assign.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="110" column="34" lean-forward="true" selection-start-line="110" selection-start-column="34" selection-end-line="110" selection-end-column="34" />
+        <state relative-caret-position="154">
+          <caret line="106" selection-start-line="106" selection-end-line="106" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-object/00-create.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-450">
+          <caret line="29" column="34" lean-forward="true" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
