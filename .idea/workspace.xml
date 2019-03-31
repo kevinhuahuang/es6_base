@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-object/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-object/04-prototype-proto.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-object/04-prototype-proto.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -104,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04-prototype-proto.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="04-prototype-proto.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo-object/04-prototype-proto.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            <state relative-caret-position="437">
+              <caret line="38" selection-start-line="38" selection-end-line="39" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -116,9 +116,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-object/test.js">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -198,8 +202,8 @@
         <option value="$PROJECT_DIR$/demo-array/02-enumerate.js" />
         <option value="$PROJECT_DIR$/demo-object/02-enumerata.js" />
         <option value="$PROJECT_DIR$/demo-object/02-enumerate.js" />
-        <option value="$PROJECT_DIR$/demo-object/04-prototype-proto.js" />
         <option value="$PROJECT_DIR$/demo-object/test.js" />
+        <option value="$PROJECT_DIR$/demo-object/04-prototype-proto.js" />
       </list>
     </option>
   </component>
@@ -218,8 +222,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="269" />
-    <option name="y" value="9" />
+    <option name="x" value="331" />
+    <option name="y" value="5" />
     <option name="width" value="1621" />
     <option name="height" value="1002" />
   </component>
@@ -294,24 +298,24 @@
   </component>
   <component name="RunManager" selected="Node.js.04-prototype-proto.js">
     <configuration name="00-create.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="00-create.js" working-dir="$PROJECT_DIR$/demo-object" />
-    <configuration name="01-assign.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="01-assign.js" working-dir="$PROJECT_DIR$/demo-object" />
     <configuration name="02-enumerata.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="02-enumerata.js" working-dir="$PROJECT_DIR$/demo-object" />
     <configuration name="02-enumerate.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="02-enumerate.js" working-dir="$PROJECT_DIR$/demo-array" />
     <configuration name="04-prototype-proto.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="04-prototype-proto.js" working-dir="$PROJECT_DIR$/demo-object" />
+    <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/demo-object" />
     <list>
       <item itemvalue="Node.js.02-enumerate.js" />
-      <item itemvalue="Node.js.01-assign.js" />
       <item itemvalue="Node.js.00-create.js" />
       <item itemvalue="Node.js.02-enumerata.js" />
       <item itemvalue="Node.js.04-prototype-proto.js" />
+      <item itemvalue="Node.js.test.js" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.04-prototype-proto.js" />
+        <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.02-enumerata.js" />
         <item itemvalue="Node.js.02-enumerate.js" />
         <item itemvalue="Node.js.00-create.js" />
-        <item itemvalue="Node.js.01-assign.js" />
       </list>
     </recent_temporary>
   </component>
@@ -335,15 +339,15 @@
       <workItem from="1553473815617" duration="1819000" />
       <workItem from="1553571522954" duration="6666000" />
       <workItem from="1553848611490" duration="9449000" />
-      <workItem from="1553907406623" duration="13710000" />
+      <workItem from="1553907406623" duration="15541000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127638000" />
+    <option name="totallyTimeSpent" value="129469000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="269" y="9" width="1621" height="1002" extended-state="0" />
+    <frame x="331" y="5" width="1621" height="1002" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1749842" />
@@ -351,9 +355,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3912037" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3912037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.37962964" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.37962964" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -656,18 +660,22 @@
     <entry file="file://$PROJECT_DIR$/demo-object/JS_ECMA_grammer_proto.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo-object/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo-object/04-prototype-proto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        <state relative-caret-position="437">
+          <caret line="38" selection-start-line="38" selection-end-line="39" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-object/test.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
