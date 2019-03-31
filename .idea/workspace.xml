@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-object/04-prototype-proto.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-object/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-object/02-enumerate.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-object/02-enumerate.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -105,16 +104,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="04-prototype-proto.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="04-prototype-proto.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-object/04-prototype-proto.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="209">
+              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo-object/test.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -145,7 +149,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.eslintrc.js" />
         <option value="$PROJECT_DIR$/generator.js" />
         <option value="$PROJECT_DIR$/async.js" />
         <option value="$PROJECT_DIR$/Reflect.js" />
@@ -196,6 +199,7 @@
         <option value="$PROJECT_DIR$/demo-object/02-enumerata.js" />
         <option value="$PROJECT_DIR$/demo-object/02-enumerate.js" />
         <option value="$PROJECT_DIR$/demo-object/04-prototype-proto.js" />
+        <option value="$PROJECT_DIR$/demo-object/test.js" />
       </list>
     </option>
   </component>
@@ -214,9 +218,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="692" />
-    <option name="y" value="19" />
-    <option name="width" value="1241" />
+    <option name="x" value="269" />
+    <option name="y" value="9" />
+    <option name="width" value="1621" />
     <option name="height" value="1002" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -331,17 +335,18 @@
       <workItem from="1553473815617" duration="1819000" />
       <workItem from="1553571522954" duration="6666000" />
       <workItem from="1553848611490" duration="9449000" />
-      <workItem from="1553907406623" duration="11530000" />
+      <workItem from="1553907406623" duration="13710000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125458000" />
+    <option name="totallyTimeSpent" value="127638000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="692" y="19" width="1241" height="1002" extended-state="0" />
+    <frame x="269" y="9" width="1621" height="1002" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23025769" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1749842" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -372,7 +377,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/reflect.html" />
     <entry file="file://$PROJECT_DIR$/proxy_reflect.js" />
     <entry file="file://$PROJECT_DIR$/proxy.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -654,13 +658,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-object/04-prototype-proto.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="209">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-object/test.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">

@@ -31,6 +31,11 @@ console.log(Foo.prototype.a)// 1
 console.log(f1.a)// 1
 console.log(f2.a)// 1
 
+console.log('构造函数的prototype属性(原型对象) === 实例对象的__proto__(原型对象)')
+console.log(Foo.prototype === f1.__proto__)
+console.log('同一个构造函数实例化的对象具有相同的原型对象')
+console.log(f1.__proto__ === f2.__proto__)
+
 console.log(Foo.prototype.constructor === Foo);//true
 
 // constructor
