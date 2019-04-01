@@ -1,7 +1,16 @@
-exports.firstName = 'Huang'
-exports.lastName = 'Hua'
-exports.birthday = '1984_06_05'
-exports.nationality = 'china'
+let name = 'Kevin'
+exports.name = name
+exports.weight = '70kg'
+exports.height = '175cm'
+exports.nickname = '还没起绰号'
 exports.getPersonalInformation = function () {
-  return this.firstName + ' ' + this.lastName + ' born in ' + this.birthday + ' come from ' + this.nationality
+  return name + ' 体重:' + this.weight + ' 身高:' + this.height + ' 绰号：' + this.nickname
+}
+
+exports.setName = function (newName) {
+  name = newName
+}
+
+exports.setNickname = function (newNickname) {
+  this.nickname = newNickname
 }
