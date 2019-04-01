@@ -1,0 +1,58 @@
+
+1.规范：
+    一个文件就是一个模块，拥有单独的作用域
+    普通方式定义的变量，函数，对象都属于该模块内
+
+2.所有代码都运行在模块作用域，不污染全局作用域
+  模块可以多次加载，但只运行一次，然后就被缓存起来
+  模块的加载顺序，按照代码的出现顺序同步加载
+
+3.__dirname代表当前模块文件所在的文件夹路径，__filename代表当前模块文件所在的文件夹路径+文件名
+
+4.require(同步加载)基本功能：读取并执行一个JS文件，然后返回该模块的exports对象。
+
+5.模块内的exports：为了方便
+
+
+// ================================================================================
+exports与module.exports的区别：
+exports的定义：node为每个模块提供一个exports变量，其指向module.exports，
+    相当于在模块头部加了这句话：var exports = module.exports，
+    在对外输出时，可以给exports对象添加方法，
+    但不能直接赋值，这样就切断了exports和module.exports的联系，exports保存的不在是module.exports的指针，而是其它的
+
+
+1.模块导入后被缓存，书写了多次导入，实际只导一次。而缓存的是实际文件名，路径不同但文件名相同会被认为是同一个文件
+一个Node.js文件就是一个模块，这个文件可能是Javascript代码，JSON或者编译过的C/C++扩展
+
+
+2.加载的模块返回的总是module.exports, exports只是指向了module.exports
+  如果exports与module.exports导出了相同名字的变量或函数，module.exports优先，exports会被忽略
+
+建议：
+1.最好别分别定义module.exports和exports
+
+2.NodeJs开发者建议导出对象用module.exports,导出多个方法和变量用export
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

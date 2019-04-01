@@ -1,7 +1,13 @@
 {
   "dependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.0",
+    "@babel/polyfill": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
     "co": "^4.6.0",
-    "thunkify": "^2.1.2"
+    "thunkify": "^2.1.2",
+    "webpack-cli": "^3.3.0"
   },
   "devDependencies": {
     "eslint": "^5.15.1",
