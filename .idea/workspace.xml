@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/demo-class/01-base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/call_apply_bind.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-other/call_apply_bind.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-other/call-apply-bind.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-other/call-apply-bind.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +30,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="call_apply_bind.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo-other/call_apply_bind.js">
+      <file leaf-file-name="call-apply-bind.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-other/call-apply-bind.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="176" column="22" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
+            <state relative-caret-position="155">
+              <caret line="171" column="2" lean-forward="true" selection-start-line="171" selection-start-column="2" selection-end-line="171" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="01-base.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo-class/01-base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -68,9 +78,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo-promise/3-firstPromise.css" />
-        <option value="$PROJECT_DIR$/demo-promise/4-all_race.js" />
-        <option value="$PROJECT_DIR$/demo-promise/1-promise.js" />
         <option value="$PROJECT_DIR$/demo-promise/2-runAsync.js" />
         <option value="$PROJECT_DIR$/demo-promise/3-promise.js" />
         <option value="$PROJECT_DIR$/demo-promise/3-all.js" />
@@ -119,6 +126,9 @@
         <option value="$PROJECT_DIR$/demo-module/es6-module/kevin-exports.js" />
         <option value="$PROJECT_DIR$/demo-module/CommonJS/person.js" />
         <option value="$PROJECT_DIR$/demo-other/call_apply_bind.js" />
+        <option value="$PROJECT_DIR$/demo-other/call-apply-bind.js" />
+        <option value="$PROJECT_DIR$/demo-class/01.js" />
+        <option value="$PROJECT_DIR$/demo-class/01-base.js" />
       </list>
     </option>
   </component>
@@ -137,9 +147,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="343" />
+    <option name="x" value="317" />
+    <option name="y" value="26" />
     <option name="width" value="1359" />
-    <option name="height" value="1020" />
+    <option name="height" value="1015" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -159,7 +170,7 @@
             <path>
               <item name="es6" type="b2602c69:ProjectViewProjectNode" />
               <item name="es6" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-other" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-class" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -207,26 +218,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.call_apply_bind.js">
+  <component name="RunManager" selected="Node.js.01-base.js">
+    <configuration name="01-base.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="01-base.js" working-dir="$PROJECT_DIR$/demo-class" />
     <configuration name="call_apply_bind.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="call_apply_bind.js" working-dir="$PROJECT_DIR$/demo-other" />
-    <configuration name="es_import.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="es_import.js" working-dir="$PROJECT_DIR$/demo-module/es6-module" />
     <configuration name="person-comfirm.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="person-comfirm.js" working-dir="$PROJECT_DIR$/demo-module/CommonJS" />
     <configuration name="person.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="person.js" working-dir="$PROJECT_DIR$/demo-module/CommonJS" />
     <configuration name="vivian-mixture.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="vivian-mixture.js" working-dir="$PROJECT_DIR$/demo-module/CommonJS" />
     <list>
-      <item itemvalue="Node.js.es_import.js" />
       <item itemvalue="Node.js.person.js" />
       <item itemvalue="Node.js.person-comfirm.js" />
       <item itemvalue="Node.js.vivian-mixture.js" />
       <item itemvalue="Node.js.call_apply_bind.js" />
+      <item itemvalue="Node.js.01-base.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.01-base.js" />
         <item itemvalue="Node.js.call_apply_bind.js" />
         <item itemvalue="Node.js.person.js" />
         <item itemvalue="Node.js.vivian-mixture.js" />
         <item itemvalue="Node.js.person-comfirm.js" />
-        <item itemvalue="Node.js.es_import.js" />
       </list>
     </recent_temporary>
   </component>
@@ -252,18 +263,18 @@
       <workItem from="1553848611490" duration="9449000" />
       <workItem from="1553907406623" duration="23852000" />
       <workItem from="1554077207910" duration="18326000" />
-      <workItem from="1554358628120" duration="1379000" />
+      <workItem from="1554358628120" duration="2731000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157485000" />
+    <option name="totallyTimeSpent" value="158837000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="366" y="0" width="1336" height="1015" extended-state="0" />
+    <frame x="317" y="26" width="1359" height="1015" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22804314" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22407266" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -313,27 +324,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo-generator/1-fibG.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-generator/2-thunk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-generator/4-thunkify.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-generator/5-thunk-use.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -483,6 +473,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -504,6 +497,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -585,8 +581,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-other/call_apply_bind.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="176" column="22" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
+        <state relative-caret-position="304">
+          <caret line="214" column="35" lean-forward="true" selection-start-line="214" selection-start-column="35" selection-end-line="214" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-class/01.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-other/call-apply-bind.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="171" column="2" lean-forward="true" selection-start-line="171" selection-start-column="2" selection-end-line="171" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-class/01-base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
         </state>
       </provider>
     </entry>

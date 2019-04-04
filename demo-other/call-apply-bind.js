@@ -7,10 +7,10 @@
  ***********************************************************************************************************************/
 function Fruits () {} // 需要调用到constructor的function首字母应该大写
 Fruits.prototype = {
-    color: 'red',
-    say: function () {
-        console.log('My color is ' + this.color)
-    }
+  color: 'red',
+  say: function () {
+    console.log('My color is ' + this.color)
+  }
 }
 let apple = new Fruits()
 apple.say() // color is red
@@ -19,7 +19,7 @@ Fruits.prototype.say(apple) // 与上面的效果一样
 // 如果我们有一个对象 banana = {color: 'yellow'}, 我们不想重新定义say方法，
 // 我们可以通过call 和 apply 的say方法
 const banana = {
-    color: 'yellow'
+  color: 'yellow'
 }
 // this的指向已经通过call方法改变了，反向是banana, this.color就是banana.color = 'yellow'
 apple.say.call(banana) // color is yellow
@@ -109,11 +109,11 @@ console.log(array2.length) // 7
 // 当绑定函数被调用时，这些参数会被插入到目标函数的参数列表的开始位置，传递给绑定函数的参数会跟在它们后面。
 console.log('------------------------------------------------------------------------------------')
 function list () {
-    return Array.prototype.slice.call(arguments)
+  return Array.prototype.slice.call(arguments)
 }
 
 function addArguments (arg1, arg2) {
-    return arg1 + arg2
+  return arg1 + arg2
 }
 
 let list1 = list(1, 2, 3) // [1, 2, 3]
@@ -146,16 +146,16 @@ console.log(result3) // 37 + 5 = 42 ，第二个参数被忽略
 // 当类的方法中需要 this 指向类的实例时，你可能需要显式地把 this 绑定到回调函数，就不会丢失该实例的引用。
 console.log('------------------------------------------------------------------------------------')
 function LateBloomer () {
-    this.petalCount = Math.ceil(Math.random() * 12) + 1
+  this.petalCount = Math.ceil(Math.random() * 12) + 1
 }
 
 // 在 1 秒钟后声明 bloom
 LateBloomer.prototype.bloom = function () {
-    global.setTimeout(this.declare.bind(this), 100) // 显示地把this绑定到回调函数
+  global.setTimeout(this.declare.bind(this), 100) // 显示地把this绑定到回调函数
 }
 
 LateBloomer.prototype.declare = function () {
-    console.log('I am a beautiful flower with ' + this.petalCount + ' petals!')
+  console.log('I am a beautiful flower with ' + this.petalCount + ' petals!')
 }
 
 let flower = new LateBloomer()
@@ -181,13 +181,13 @@ flower.bloom() // 一秒钟后, 调用'declare'方法
 // =====================================================================================================================
 console.log('------------------------------------------------------------------------------------')
 function Product (name, price) {
-    this.name = name
-    this.price = price
+  this.name = name
+  this.price = price
 }
 
 function Food (name, price) {
-    Product.call(this, name, price)
-    this.category = 'food'
+  Product.call(this, name, price)
+  this.category = 'food'
 }
 
 console.log((new Food('cheese', 5)).name) // cheese
