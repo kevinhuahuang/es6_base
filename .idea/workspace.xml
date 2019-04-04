@@ -1,23 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/proxy.js" line="326" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-module/es6-module/kevin-exports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-module/es6-module/person.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-module/es6-module/readme" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-module/es6-module/shirley-module.exports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo-module/es6-module/vivian-mixture.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-module/CommonJS/kevin-exports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-module/CommonJS/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-module/CommonJS/person.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-module/CommonJS/shirley-module.exports.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-module/CommonJS/vivian-mixture.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-module/es6-module/es6_export.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-module/es6-module/es_import.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-module/es6-module/middle_export.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-module/es6-module/middle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/call_apply_bind.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-other/call_apply_bind.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,23 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="kevin-exports.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-module/es6-module/kevin-exports.js">
+      <file leaf-file-name="person.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/person.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="323">
+              <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="person.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/person.js">
+      <file leaf-file-name="call_apply_bind.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo-other/call_apply_bind.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="389">
+              <caret line="176" column="22" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -82,7 +68,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo-async/5-parallel.js" />
         <option value="$PROJECT_DIR$/demo-promise/3-firstPromise.css" />
         <option value="$PROJECT_DIR$/demo-promise/4-all_race.js" />
         <option value="$PROJECT_DIR$/demo-promise/1-promise.js" />
@@ -133,6 +118,7 @@
         <option value="$PROJECT_DIR$/demo-module/CommonJS/vivian-mixture.js" />
         <option value="$PROJECT_DIR$/demo-module/es6-module/kevin-exports.js" />
         <option value="$PROJECT_DIR$/demo-module/CommonJS/person.js" />
+        <option value="$PROJECT_DIR$/demo-other/call_apply_bind.js" />
       </list>
     </option>
   </component>
@@ -151,9 +137,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="921" />
-    <option name="width" value="998" />
-    <option name="height" value="1015" />
+    <option name="x" value="343" />
+    <option name="width" value="1359" />
+    <option name="height" value="1020" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -173,19 +159,7 @@
             <path>
               <item name="es6" type="b2602c69:ProjectViewProjectNode" />
               <item name="es6" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="es6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="es6" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-module" type="462c0819:PsiDirectoryNode" />
-              <item name="CommonJS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="es6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="es6" type="462c0819:PsiDirectoryNode" />
-              <item name="demo-module" type="462c0819:PsiDirectoryNode" />
-              <item name="es6-module" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-other" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,7 +171,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DigitalPRocessV7_ipad" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -210,14 +184,15 @@
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\workspace\es6\demo-object" />
-      <recent name="E:\workspace\es6\demo-generator" />
-      <recent name="E:\workspace\es6\demo-promise" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\workspace\es6\demo-module\es6-module" />
       <recent name="E:\workspace\es6" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\es6\demo-other" />
+      <recent name="E:\workspace\es6\demo-object" />
+      <recent name="E:\workspace\es6\demo-generator" />
+      <recent name="E:\workspace\es6\demo-promise" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -232,26 +207,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.person.js">
-    <configuration name="05-object-functoin.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="05-object-functoin.js" working-dir="$PROJECT_DIR$/demo-object" />
+  <component name="RunManager" selected="Node.js.call_apply_bind.js">
+    <configuration name="call_apply_bind.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="call_apply_bind.js" working-dir="$PROJECT_DIR$/demo-other" />
     <configuration name="es_import.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="es_import.js" working-dir="$PROJECT_DIR$/demo-module/es6-module" />
     <configuration name="person-comfirm.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="person-comfirm.js" working-dir="$PROJECT_DIR$/demo-module/CommonJS" />
     <configuration name="person.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="person.js" working-dir="$PROJECT_DIR$/demo-module/CommonJS" />
     <configuration name="vivian-mixture.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="vivian-mixture.js" working-dir="$PROJECT_DIR$/demo-module/CommonJS" />
     <list>
-      <item itemvalue="Node.js.05-object-functoin.js" />
       <item itemvalue="Node.js.es_import.js" />
       <item itemvalue="Node.js.person.js" />
       <item itemvalue="Node.js.person-comfirm.js" />
       <item itemvalue="Node.js.vivian-mixture.js" />
+      <item itemvalue="Node.js.call_apply_bind.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.call_apply_bind.js" />
         <item itemvalue="Node.js.person.js" />
         <item itemvalue="Node.js.vivian-mixture.js" />
         <item itemvalue="Node.js.person-comfirm.js" />
         <item itemvalue="Node.js.es_import.js" />
-        <item itemvalue="Node.js.05-object-functoin.js" />
       </list>
     </recent_temporary>
   </component>
@@ -276,25 +251,26 @@
       <workItem from="1553571522954" duration="6666000" />
       <workItem from="1553848611490" duration="9449000" />
       <workItem from="1553907406623" duration="23852000" />
-      <workItem from="1554077207910" duration="16891000" />
+      <workItem from="1554077207910" duration="18326000" />
+      <workItem from="1554358628120" duration="1379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154671000" />
+    <option name="totallyTimeSpent" value="157485000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="675" y="0" width="1244" height="1015" extended-state="0" />
+    <frame x="366" y="0" width="1336" height="1015" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24543947" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22804314" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3477765" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32383123" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32346243" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -309,19 +285,19 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22798353" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3477765" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.41961232" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -337,28 +313,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo-promise/2-runAsync.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-promise/3-promise.js" />
-    <entry file="file://$PROJECT_DIR$/demo-promise/3-all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="31" column="50" lean-forward="true" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-promise/4-race.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-generator/1-fibG.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
@@ -482,9 +436,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1976">
           <caret line="110" selection-start-line="110" selection-end-line="110" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -532,9 +483,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -542,9 +490,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -559,9 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -579,9 +521,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/shirely.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/shirely.js" />
     <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/middle.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -592,13 +532,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/exports-module.exports.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="30" lean-forward="true" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/exports-module.exports.js" />
     <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/readme">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -606,78 +540,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/es6-module/es_import.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" lean-forward="true" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-module/es6-module/es_import.js" />
     <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/shirley.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/shirely-module.exports.js">
+    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/shirely-module.exports.js" />
+    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/person-comfirm.js" />
+    <entry file="file://$PROJECT_DIR$/demo-module/es6-module/es6_export.js" />
+    <entry file="file://$PROJECT_DIR$/demo-module/es6-module/middle_export.js" />
+    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/shirley-module.exports.js" />
+    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/kevin-exports.js" />
+    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/vivian-mixture.js" />
+    <entry file="file://$PROJECT_DIR$/demo-module/es6-module/kevin-exports.js" />
+    <entry file="file://$PROJECT_DIR$/proxy.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="12" lean-forward="true" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/person-comfirm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/es6-module/es6_export.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state>
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/es6-module/middle_export.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/shirley-module.exports.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/kevin-exports.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/vivian-mixture.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-module/es6-module/kevin-exports.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-module/CommonJS/person.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="323">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/object.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-other/call_apply_bind.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="176" column="22" selection-start-line="176" selection-start-column="22" selection-end-line="176" selection-end-column="22" />
         </state>
       </provider>
     </entry>

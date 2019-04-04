@@ -1,56 +1,57 @@
 /***********************************************************************************************************************
-* call, apply和bind是Function对象自带的三个方法，目的是为了改变函数体内部this的指向
+ * call, apply和bind是Function对象自带的三个方法，目的是为了改变函数体内部this的指向
  * 第一个参数都是this要指向的对象，也就是想指定的上下文
  * 都可以利用后续参数传参
  * bind返回对应函数
  * apply, call则立即调用
-***********************************************************************************************************************/
-// function Fruits () {} // 需要调用到constructor的function首字母应该大写
-// Fruits.prototype = {
-//   color: 'red',
-//   say: function () {
-//     console.log('My color is ' + this.color)
-//   }
-// }
-// let apple = new Fruits()
-// apple.say() // color is red
-// Fruits.prototype.say(apple) // 与上面的效果一样
-//
-// // 如果我们有一个对象 banana = {color: 'yellow'}, 我们不想重新定义say方法，
-// // 我们可以通过call 和 apply 的say方法
-// const banana = {
-//   color: 'yellow'
-// }
-// // this的指向已经通过call方法改变了，反向是banana, this.color就是banana.color = 'yellow'
-// apple.say.call(banana) // color is yellow
-// Fruits.prototype.say.call(banana) // 与上面的效果一样
-//
-// // this的指向通过apply方法改变了，指向的是banana
-// apple.say.apply(banana)
-// Fruits.prototype.say.apply(banana) // 与上面的效果一样
-//
-// // null是window下的，此时this指向了window,但是window下并没有color这个属性，因此返回undefined
-// apple.say.apply(null)
-// Fruits.prototype.say.apply(null) // 与上面的效果一样
+ ***********************************************************************************************************************/
+function Fruits () {} // 需要调用到constructor的function首字母应该大写
+Fruits.prototype = {
+    color: 'red',
+    say: function () {
+        console.log('My color is ' + this.color)
+    }
+}
+let apple = new Fruits()
+apple.say() // color is red
+Fruits.prototype.say(apple) // 与上面的效果一样
+
+// 如果我们有一个对象 banana = {color: 'yellow'}, 我们不想重新定义say方法，
+// 我们可以通过call 和 apply 的say方法
+const banana = {
+    color: 'yellow'
+}
+// this的指向已经通过call方法改变了，反向是banana, this.color就是banana.color = 'yellow'
+apple.say.call(banana) // color is yellow
+Fruits.prototype.say.call(banana) // 与上面的效果一样
+
+// this的指向通过apply方法改变了，指向的是banana
+apple.say.apply(banana)
+Fruits.prototype.say.apply(banana) // 与上面的效果一样
+
+// null是window下的，此时this指向了window,但是window下并没有color这个属性，因此返回undefined
+apple.say.apply(null)
+Fruits.prototype.say.apply(null) // 与上面的效果一样
 
 // =====================================================================================================================
 // 对于apply, call二者而言，作用完全一样，只是接受参数的方式不一样。
 // call是把参数按顺序传进去
 // apply是把参数都放到数组里
-// let array1 = [12, 'foo', { name: 'Joe' }, -2458]
-// let array2 = [12, 'foo', { name: 'Joe' }, -2458]
-// let array3 = ['Doe', 555, 1000]
-//
-// Array.prototype.push.call(array1, array3)
-// // 第二个参数不会把array2当成数组，而是一个元素
-// // 等价于 array1.push(['Doe', 555, 100]) 即array1.push(array3) array1.lenght = 5
-// console.log(array1) // [ 12, 'foo', { name: 'Joe' }, -2458, [ 'Doe', 555, 1000 ] ]
-// console.log(array1.length) // 5
-//
-// Array.prototype.push.apply(array2, array3)
-// // 等价于 array2.push('Doe').push(555).push(1000) 即相当array2.push(...array3) array1.length = 7
-// console.log(array2) // [ 12, 'foo', { name: 'Joe' }, -2458, 'Doe', 555, 1000 ]
-// console.log(array2.length) // 7
+console.log('------------------------------------------------------------------------------------')
+let array1 = [12, 'foo', { name: 'Joe' }, -2458]
+let array2 = [12, 'foo', { name: 'Joe' }, -2458]
+let array3 = ['Doe', 555, 1000]
+
+Array.prototype.push.call(array1, array3)
+// 第二个参数不会把array2当成数组，而是一个元素
+// 等价于 array1.push(['Doe', 555, 100]) 即array1.push(array3) array1.lenght = 5
+console.log(array1) // [ 12, 'foo', { name: 'Joe' }, -2458, [ 'Doe', 555, 1000 ] ]
+console.log(array1.length) // 5
+
+Array.prototype.push.apply(array2, array3)
+// 等价于 array2.push('Doe').push(555).push(1000) 即相当array2.push(...array3) array1.length = 7
+console.log(array2) // [ 12, 'foo', { name: 'Joe' }, -2458, 'Doe', 555, 1000 ]
+console.log(array2.length) // 7
 
 // =====================================================================================================================
 // 类（伪）数组使用数组方法
@@ -62,11 +63,12 @@
 // // slice() 方法可从已有的数组中返回选定的元素，不传参数是，返回整个数组
 // Array.isArray(domNodes) // true
 
+// console.log('------------------------------------------------------------------------------------')
 /**
-* bind() 方法会创建一个新函数，称为绑定函数，当调用这个绑定函数时，
+ * bind() 方法会创建一个新函数，称为绑定函数，当调用这个绑定函数时，
  * 绑定函数会以创建它时传入bind()方法的第一个参数作为this, 传入bind() 方法的第二个以及以后的参
  * 数加上绑定函数运行时本身的参数按照顺序作为原函数的参数来调用原函数
-* */
+ * */
 // var module = { // module不能用let定义，要用var定义
 //   x: 42,
 //   getX: function () {
@@ -82,7 +84,7 @@
 //
 // let boundGetX = unboundGetX.bind(module)
 // console.log(boundGetX())
-// // expected output: 42
+// expected output: 42
 // =====================================================================================================================
 // this.x = 9 // 在浏览器中，this指向全局的 "window" 对象
 // var module = {
@@ -105,85 +107,90 @@
 // bind()的另一个最简单的用法是使一个函数拥有预设的初始参数。
 // 只要将这些参数（如果有的话）作为bind()的参数写在this后面。
 // 当绑定函数被调用时，这些参数会被插入到目标函数的参数列表的开始位置，传递给绑定函数的参数会跟在它们后面。
-// function list () {
-//   return Array.prototype.slice.call(arguments)
-// }
-//
-// function addArguments (arg1, arg2) {
-//   return arg1 + arg2
-// }
-//
-// let list1 = list(1, 2, 3) // [1, 2, 3]
-// console.log(list1)
-//
-// let result1 = addArguments(1, 2) // 3
-// console.log(result1)
-//
-// // 创建一个函数，它拥有预设参数列表。
-// let leadingThirtysevenList = list.bind(null, 37)
-//
-// // 创建一个函数，它拥有预设的第一个参数
-// let addThirtySeven = addArguments.bind(null, 37)
-//
-// let list2 = leadingThirtysevenList()
-// console.log(list2) // [37]
-//
-// let list3 = leadingThirtysevenList(1, 2, 3)
-// console.log(list3) // [37, 1, 2, 3]
-//
-// let result2 = addThirtySeven(5)
-// console.log(result2) // 37 + 5 = 42
-//
-// let result3 = addThirtySeven(5, 10)
-// console.log(result3) // 37 + 5 = 42 ，第二个参数被忽略
+console.log('------------------------------------------------------------------------------------')
+function list () {
+    return Array.prototype.slice.call(arguments)
+}
+
+function addArguments (arg1, arg2) {
+    return arg1 + arg2
+}
+
+let list1 = list(1, 2, 3) // [1, 2, 3]
+console.log(list1)
+
+let result1 = addArguments(1, 2) // 3
+console.log(result1)
+
+// 创建一个函数，它拥有预设参数列表。
+let leadingThirtysevenList = list.bind(null, 37)
+
+// 创建一个函数，它拥有预设的第一个参数
+let addThirtySeven = addArguments.bind(null, 37)
+
+let list2 = leadingThirtysevenList()
+console.log(list2) // [37]
+
+let list3 = leadingThirtysevenList(1, 2, 3)
+console.log(list3) // [37, 1, 2, 3]
+
+let result2 = addThirtySeven(5)
+console.log(result2) // 37 + 5 = 42
+
+let result3 = addThirtySeven(5, 10)
+console.log(result3) // 37 + 5 = 42 ，第二个参数被忽略
 
 // =====================================================================================================================
 // 配合setTimeout
 // 在默认情况下，使用 window.setTimeout() 时，this 关键字会指向 window （或global）对象。
 // 当类的方法中需要 this 指向类的实例时，你可能需要显式地把 this 绑定到回调函数，就不会丢失该实例的引用。
-// function LateBloomer () {
-//   this.petalCount = Math.ceil(Math.random() * 12) + 1
-// }
-//
-// // 在 1 秒钟后声明 bloom
-// LateBloomer.prototype.bloom = function () {
-//   global.setTimeout(this.declare.bind(this), 1000) // 显示地把this绑定到回调函数
-// }
-//
-// LateBloomer.prototype.declare = function () {
-//   console.log('I am a beautiful flower with ' + this.petalCount + ' petals!')
-// }
-//
-// let flower = new LateBloomer()
-// flower.bloom() // 一秒钟后, 调用'declare'方法
+console.log('------------------------------------------------------------------------------------')
+function LateBloomer () {
+    this.petalCount = Math.ceil(Math.random() * 12) + 1
+}
+
+// 在 1 秒钟后声明 bloom
+LateBloomer.prototype.bloom = function () {
+    global.setTimeout(this.declare.bind(this), 100) // 显示地把this绑定到回调函数
+}
+
+LateBloomer.prototype.declare = function () {
+    console.log('I am a beautiful flower with ' + this.petalCount + ' petals!')
+}
+
+let flower = new LateBloomer()
+flower.bloom() // 一秒钟后, 调用'declare'方法
 // =====================================================================================================================
 // 快捷调用
-// var slice = Array.prototype.slice
-// slice.apply(arguments)
+// console.log('------------------------------------------------------------------------------------')
+// let ary = ['Hello', 'World', 'ignore']
+// var slice1 = Array.prototype.slice
+// slice1.apply(ary)
 // // 用 bind()可以使这个过程变得简单。在下面这段代码里面，
 // // slice 是 Function.prototype 的 apply() 方法的绑定函数，
 // // 并且将 Array.prototype 的 slice() 方法作为 this 的值。这意味着我们用不着上面那个 apply()调用了。
 //
 // // 与前一段代码的 "slice" 效果相同
 // var unboundSlice = Array.prototype.slice
-// var slice = Function.prototype.apply.bind(unboundSlice)
+// var slice2 = Function.prototype.apply.bind(unboundSlice)
 // // ...
-// slice(arguments)
+// console.log(slice2(ary))
 /**
  * fun.call(thisArg, arg1, arg2, ...) 方法调用一个函数，其具有有一个指定的this值和分别地提供的参数(参数的列表)
  * */
 // =====================================================================================================================
-// function Product (name, price) {
-//   this.name = name
-//   this.price = price
-// }
-//
-// function Food (name, price) {
-//   Product.call(this, name, price)
-//   this.category = 'food'
-// }
-//
-// console.log((new Food('cheese', 5)).name) // cheese
+console.log('------------------------------------------------------------------------------------')
+function Product (name, price) {
+    this.name = name
+    this.price = price
+}
+
+function Food (name, price) {
+    Product.call(this, name, price)
+    this.category = 'food'
+}
+
+console.log((new Food('cheese', 5)).name) // cheese
 
 // =====================================================================================================================
 // 使用call方法调用父构造函数
