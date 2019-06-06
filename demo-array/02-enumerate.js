@@ -1,15 +1,15 @@
-let aryPublic = [1, 2, 3, 4, 5, 6, , , 7, 8, 9, 10, 11]
+let aryPublic = ['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', , , 'a9', 'a10', 'a11']
 
 // find 返回第一个符合条件的元素
 console.log('----------find')
 console.log(aryPublic.find((value, index, ary) => {
-  return value > 3
+  return value > 3 // 当true时返回
 }))
 
 // findIndex 返回第一个符合条件的元素的index
 console.log('----------findIndex start from 0')
 console.log(aryPublic.findIndex((value, index, ary) => {
-  return value > 3
+  return value > 3 // 当true时返回
 }))
 
 // ==============================================================
@@ -35,7 +35,7 @@ for (let [index, value] of aryPublic.entries()) {
 
 // ==============================================================
 // forEach
-console.log('----------forEach')
+console.log('----------forEach 跳过空值---------')
 let indexAry = []
 let valueAry = []
 aryPublic.forEach((value, index, ary) => { // 跳过空值，但空值占用index
@@ -47,18 +47,18 @@ console.log(indexAry)
 console.log(valueAry)
 // ==============================================================
 // every some filter map
-console.log('----------every')
+console.log('----------every----------')
 console.log(aryPublic.every((value, index, ary) => {
   return value > 1
 }))
 
-console.log('----------some')
+console.log('----------some---------')
 console.log(aryPublic.some((value, index, ary) => {
   return value > 10
 }))
 
 console.log('----------filter')
-console.log(aryPublic.filter((value, index, ary) => {
+console.log(aryPublic.filter((value, index, ary) => { // 返回符合条件的元素组成的数组
   return value > 5
 }))
 

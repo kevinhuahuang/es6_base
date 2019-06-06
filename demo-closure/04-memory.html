@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        let item = {
+            name: 'item',
+            kind: 'message'
+        }
+        function func() {
+            let obj1 = {};
+            let obj2 = {};
+
+            obj1.a = obj2; // obj1 引用 obj2
+            obj2.a = obj1; // obj2 引用 obj1
+        }
+        function init() {
+            func()
+            console.log(func())
+            console.log(obj1)
+            console.log(obj2)
+        }
+
+        function buttonClick() {
+            let str = item.name
+            console.log(str)
+        }
+    </script>
+</head>
+<body onload="init()">
+  <button onclick="buttonClick()">点击</button>
+</body>
+</html>

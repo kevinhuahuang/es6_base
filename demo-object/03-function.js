@@ -8,4 +8,6 @@ let kevin = new Person()
 let People = Person // People是指向Person的指针，作用与Person
 let vivian = new People()
 console.log(kevin.functionInside)
+console.log(kevin.functionInside)
+console.log(vivian.functionOutside)
 console.log(vivian.functionOutside)

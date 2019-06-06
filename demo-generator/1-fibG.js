@@ -1,3 +1,8 @@
+/**
+ * 斐波那契数列，又称黄金分割数据，以兔子繁殖为例而引入，故又称为兔子数列
+ * 1,1,2,3,5,8,13,21,34 每一项都等于前两项之和
+ * */
+
 function fib (max) { // 斐波那契数列产生器
   let a = 0
   let b = 1
@@ -9,7 +14,9 @@ function fib (max) { // 斐波那契数列产生器
   return arr
 }
 
+console.log('fib(5)：')
 console.log(fib(5))
+console.log('fib(10)：')
 console.log(fib(10))
 
 function * fibG (max) {

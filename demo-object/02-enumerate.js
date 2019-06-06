@@ -10,7 +10,7 @@ let objPublic = {
 }
 
 console.log('------------------for in')
-for (let key in objPublic) {
+for (let key in objPublic) { // 包括自身和继承的
   console.log(key)
 }
 

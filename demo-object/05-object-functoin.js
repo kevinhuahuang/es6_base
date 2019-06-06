@@ -13,7 +13,6 @@ console.log(Object instanceof Function) // true
 console.log('构造器Function的构造器是它自身')
 console.log(Function.constructor === Function)
 
-
 console.log('构造器Object的构造器是Function（由此可知所有构造器的constructor都指向Function）')
 console.log(Object.constructor === Function)
 

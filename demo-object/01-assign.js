@@ -38,7 +38,7 @@ console.log(objMergeSame)
 
 // --------------------------------------------------------------
 // 不能拷贝继承属性和不可枚举
-const objSpecial = Object.create({ foo: 1 }, {
+const objSpecial = Object.create({ foo: 1 }, { // foo:1是继承属性
   bar: {
     value: 2 // bar 是个不可枚举属性
   },
@@ -49,6 +49,7 @@ const objSpecial = Object.create({ foo: 1 }, {
 })
 
 const objCopySpecial = Object.assign({}, objSpecial)
+console.log('不能拷贝继承属性和不可枚举')
 console.log(objCopySpecial)
 
 // --------------------------------------------------------------
@@ -76,6 +77,7 @@ console.log(copySymbol)
 // 非深拷贝，拷贝属性值和对象的引用
 // 针对深拷贝，需要使用其他办法，因为 Object.assign()拷贝的是属性值。
 // 假如源对象的属性值是一个对象的引用，那么它也只指向那个引用。
+console.log('---------------非深拷贝，拷贝属性值和对象的引用------------')
 let obj1 = { a: 0, b: { c: 0 } }
 let obj2 = Object.assign({}, obj1)
 console.log('obj2拷贝 ojb1内容')
@@ -96,19 +98,17 @@ console.log('更改obj2.b.c = 3， obj1.b.c值同步改变')
 console.log(JSON.stringify(obj1)) // { a: 1, b: { c: 3}}
 console.log(JSON.stringify(obj2)) // { a: 2, b: { c: 3}}
 
-// Deep Clone
 obj1 = { a: 0, b: { c: 0 } }
 let obj3 = JSON.parse(JSON.stringify(obj1))
 obj1.a = 4
 obj1.b.c = 4
-console.log('深拷贝')
 console.log(JSON.stringify(obj3)) // { a: 0, b: { c: 0}}
 
 // --------------------------------------------------------------
 // 与扩展运算符...的比较，都是对象浅拷贝
 let objBeCopy = { name: 'vivian', property: { age: 18 } }
-let objDeepTemp = Object.assign({}, objBeCopy)
-let objDeepCopy = { ...objBeCopy }
+let objDeepTemp = Object.assign({}, objBeCopy) // 对象浅拷贝
+let objDeepCopy = { ...objBeCopy } // 对象浅拷贝
 objBeCopy.name = 'kevin'
 objBeCopy.property.age = 35
 console.log('assign与扩展运算符...的比较')

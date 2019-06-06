@@ -5,7 +5,7 @@ function myPromise () {
       if (num < 5) {
         resolve('数据:' + num + ' 小于5 正确')
       } else {
-        // eject('数据：' + num + ' 大于5 错误') // not good
+        // reject('数据：' + num + ' 大于5 错误') // not good
         reject(new Error('数据：' + num + ' 大于5 错误')) // good
       }
     }, 1000)
@@ -14,11 +14,11 @@ function myPromise () {
 }
 
 myPromise()
-  .then(function (data) {
+  .then(function (data) { // 对应resolve
     console.log('操作成功')
     console.log(data)
   })
-  .catch(function (data) {
+  .catch(function (data) { // 对应reject
     console.log('操作失败')
     console.log(data)
   })

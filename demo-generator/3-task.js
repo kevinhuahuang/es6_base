@@ -35,12 +35,12 @@ function serve (success) { // success是回调函数
 
 function run (fn) { // generator自动运行函数
   const gen = fn()
-  function next () { // Thunk的回调函数
+  function nextThunk () { // Thunk的回调函数
     const result = gen.next()
     if (result.done) return
-    result.value(next) // result.value是一个Thunk函数，而回调函数next是它的参数
+    result.value(nextThunk) // result.value是一个Thunk函数，而回调函数next是它的参数
   }
-  next()
+  nextThunk()
   // next函数就是Thunk的回调函数，
   // next函数先将指针移动Generator函数的下一步（gen.next方法）
   // 然后判断Generator函数是否结束（result.done属性）

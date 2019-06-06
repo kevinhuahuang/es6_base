@@ -7,10 +7,10 @@ function sleep (second) {
   })
 }
 
-async function errorDemo () { // 会报错 请使用try catch处理
-  let result = await sleep(1000)
-  console.log(result)
-}
+// async function errorDemo () { // 会报错 请使用try catch处理
+//   let result = await sleep(1000)
+//   console.log(result)
+// }
 
 // 用try catch处理上面的函数
 async function errorDemoSuper () {

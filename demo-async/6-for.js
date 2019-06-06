@@ -9,8 +9,12 @@ console.log(forDemo())// 正常输出
 
 async function forBugDemo () {
   let arr = [1, 2, 3, 4, 5]
-  arr.forEach(item => {
-    // await item; // 报错 await 不在 async的上下文
-  }, this)
+  // arr.forEach(item => {
+  //   await item; // 报错 await 不在 async的上下文
+  // }, this)
+  for (let item of arr) {
+    await item
+  }
 }
+
 forBugDemo()// Uncaught SyntaxError: Unexpected identifier

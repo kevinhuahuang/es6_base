@@ -36,7 +36,7 @@ let aryMap = Array.from(map)
 console.log('map转换为数组： ')
 console.log(aryMap)
 
-// 将类数组对象转换为真正的数组
+// 将非类数组对象转换为真正的数组
 let arrayNotSimilar = {
   name: 'kevin',
   age: 35,
@@ -61,17 +61,11 @@ let arySimilar = Array.from(arraySimilar)
 console.log('类数组对象转数组：')
 console.log(arySimilar)
 
-/* 接受this为第三个参数
+/** 接受this为第三个参数
 * 将数据和对象分离，将不同的方法封装到不同的对象中去，处理方法采用相同的名字。
 在调用Array.from对数据对象进行转换时，可以将不同的处理对象按实际情况进行注入，以得到不同的结果，适合解耦。
 这种做法是模板设计模式的应用，有点类似于依赖注入 */
-let diObj = {
-  handle: function (n) {
-    return n + 2
-  }
-}
-
-let kevin = {
+let kevin = { // 类数组对象，可转换为数组[english, kevin]
   0: 'english',
   1: 'kevin',
   setKeyValue: function (key, value) {
@@ -83,7 +77,6 @@ let kevin = {
 
 let hua = {
   0: '中文',
-  1: '华',
   setKeyValue: function (key, value) {
     let obj = {} // 创建对象不推荐使用 new Object()
     if (key === 'language') {
@@ -93,15 +86,16 @@ let hua = {
     }
     obj[key] = value
     return obj
-  }
+  },
+  1: '华'
 }
 
 let kevinAry = Array.from(['language', 'name'], function (value, index) { // 此处不要使用箭头函数，否则this指向的是数组
-  return this.setKeyValue(value, this[index])
+  return this.setKeyValue(value, this[index]) // this[index] 类数组对象转换成数组，非类数组对象将返回undefined
 }, kevin)
 
 let huaAry = Array.from(['language', 'name'], function (value, index) { // 此处不要使用箭头函数，否则this指向的是数组return this.setKeyValue(value, this[index])
-  return this.setKeyValue(value, this[index])
+  return this.setKeyValue(value, this[index]) // this[index] 类数组对象转换成数组，非类数组对象将返回undefined
 }, hua)
 console.log('设置第三个参数this: ')
 console.log(kevinAry)

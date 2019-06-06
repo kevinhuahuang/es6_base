@@ -18,10 +18,30 @@
 * 原型关系链为newObj.__proto__== F.prototype == o
 * 相当于实现了原型继承方式（注意不是原型链继承）,本质上来说是对一个对象进行了浅拷贝
 */
+// --------------------------------------------------------------
+function Vehicle () {
+  this.isMove = 'movable'
+}
+Vehicle.prototype = {
+  engine: 'oil'
+}
 
+let vehicle = new Vehicle()
+
+let car = Object.create(Vehicle.prototype, { wheels: { // 设置参数值对应的是一个对象 wheels: 4这是错误的
+  configurable: false,
+  writable: true,
+  value: 4 } })
+console.log(vehicle.isMove) // moveable
+console.log(car.isMove) // undefined
+console.log(vehicle.engine) // oil
+console.log(car.engine) // oil
+console.log(vehicle.wheels) // undefined
+console.log(car.wheels) // 4
 // --------------------------------------------------------------
 // 实现类式继承
 // Shape - 父类(superclass)
+console.log('-------------实例类式继承------------')
 function Shape () {
   this.x = 0
   this.y = 0
@@ -45,13 +65,17 @@ Rectangle.prototype.constructor = Rectangle
 
 var rect = new Rectangle()
 
-console.log('Is rect an instance of Rectangle?',
-  rect instanceof Rectangle) // true
-console.log('Is rect an instance of Shape?',
-  rect instanceof Shape) // true
+console.log('Is rect an instance of Rectangle?', rect instanceof Rectangle) // true
+console.log('Is rect an instance of Shape?', rect instanceof Shape) // true
 rect.move(1, 1) // Outputs, 'Shape moved.'
 
 // 使用混入的方式继承多个对象
+function SuperClass () {
+}
+
+function OtherSuperClass () {
+}
+
 function MyClass () {
   SuperClass.call(this)
   OtherSuperClass.call(this)

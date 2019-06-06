@@ -15,7 +15,7 @@ function normalFunc () {
 }
 
 async function awaitDemo () {
-  await normalFunc()
+  await normalFunc() // 立即执行
   console.log('happening...')
   let result = await sleep(2000) // result保存 sleep中resolve传出的参数
   return result // then方法的参数

@@ -18,6 +18,7 @@ console.log('toValue: ' + point.toValue()) // 3
 console.log(point.hasOwnProperty('x')) // true
 console.log(point.hasOwnProperty('y')) // true
 console.log(point.hasOwnProperty('toString')) // false
+console.log(point.hasOwnProperty('toValue')) // false
 console.log(point.__proto__.hasOwnProperty('toString')) // true
 
 console.log('-------------------class表达式----------------------------------------')
