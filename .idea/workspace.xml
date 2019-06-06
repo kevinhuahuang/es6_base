@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-other/00-this.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-closure/10-pitfall.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-closure/10-pitfall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-closure/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-closure/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-closure/01-base.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-closure/01-base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-closure/02-time.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-closure/02-time.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-closure/03-cache.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-closure/03-cache.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-closure/test.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,17 +23,17 @@
       <file leaf-file-name="01-base.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-closure/01-base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1786">
-              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+            <state relative-caret-position="380">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="03-cache.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="03-cache.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo-closure/03-cache.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="481">
+              <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -46,20 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo-closure/test.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="02-time.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-closure/02-time.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="266">
+              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -73,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="00-this.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="00-this.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-other/00-this.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="209">
+              <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -176,8 +168,6 @@
         <option value="$PROJECT_DIR$/demo-object/04-prototype-proto.js" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/demo-closure/00-base.js" />
-        <option value="$PROJECT_DIR$/demo-closure/03-cache.js" />
-        <option value="$PROJECT_DIR$/demo-closure/01-base.js" />
         <option value="$PROJECT_DIR$/demo-closure/04-memory.html" />
         <option value="$PROJECT_DIR$/demo-closure/test.js" />
         <option value="$PROJECT_DIR$/demo-object/06-new-no-new.js" />
@@ -186,6 +176,8 @@
         <option value="$PROJECT_DIR$/demo-closure/test.html" />
         <option value="$PROJECT_DIR$/demo-closure/10-pitfall.js" />
         <option value="$PROJECT_DIR$/demo-other/00-this.js" />
+        <option value="$PROJECT_DIR$/demo-closure/01-base.js" />
+        <option value="$PROJECT_DIR$/demo-closure/03-cache.js" />
       </list>
     </option>
   </component>
@@ -204,9 +196,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="662" />
+    <option name="x" value="615" />
     <option name="y" value="18" />
-    <option name="width" value="1231" />
+    <option name="width" value="1222" />
     <option name="height" value="997" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -380,25 +372,25 @@
       <workItem from="1559524376415" duration="5734000" />
       <workItem from="1559633716327" duration="5383000" />
       <workItem from="1559694687457" duration="21843000" />
-      <workItem from="1559782302593" duration="11624000" />
+      <workItem from="1559782302593" duration="13730000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="248004000" />
+    <option name="totallyTimeSpent" value="250110000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="662" y="18" width="1231" height="997" extended-state="0" />
+    <frame x="477" y="18" width="1360" height="997" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19027661" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17170954" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23748545" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23748545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2491269" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2491269" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2472767" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -689,20 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-closure/03-cache.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-closure/04-memory.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-closure/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -714,20 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-closure/01-base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1786">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-closure/02-time.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -754,8 +718,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo-other/00-this.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        <state relative-caret-position="209">
+          <caret line="11" column="3" lean-forward="true" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-closure/04-memory.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-closure/02-time.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-closure/01-base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-closure/03-cache.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
         </state>
       </provider>
     </entry>

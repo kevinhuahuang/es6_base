@@ -111,7 +111,7 @@ console.log('--------------------返回函数不要引用任何循环变量，�
 function countFix () {
   var arr = []
   for (var i = 1; i <= 3; i++) {
-    arr.push((function (n) { // 立即执行的匿名函数，闭包，保存了每次循环的变量
+    arr.push((function (n) {
       return function () {
         return n * n
       }
