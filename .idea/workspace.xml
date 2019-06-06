@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec4476ff-a6ef-4ddf-8f6b-e97442437ef6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/demo-closure/10-pitfall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo-other/00-this.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-closure/02-time.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-closure/02-time.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-closure/10-pitfall.js" beforeDir="false" afterPath="$PROJECT_DIR$/demo-closure/10-pitfall.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-closure/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo-closure/test.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,8 +49,8 @@
       <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-closure/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="304">
+              <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -63,11 +64,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="10-pitfall.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="10-pitfall.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo-closure/10-pitfall.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="448">
-              <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+              <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="00-this.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/demo-other/00-this.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -125,7 +135,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo-module/es6-module/es6_export.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/demo-module/es6-module/es_import.js" />
@@ -170,12 +179,13 @@
         <option value="$PROJECT_DIR$/demo-closure/03-cache.js" />
         <option value="$PROJECT_DIR$/demo-closure/01-base.js" />
         <option value="$PROJECT_DIR$/demo-closure/04-memory.html" />
-        <option value="$PROJECT_DIR$/demo-closure/test.html" />
         <option value="$PROJECT_DIR$/demo-closure/test.js" />
         <option value="$PROJECT_DIR$/demo-object/06-new-no-new.js" />
         <option value="$PROJECT_DIR$/demo-object/07-new-no-new.js" />
         <option value="$PROJECT_DIR$/demo-closure/02-time.js" />
+        <option value="$PROJECT_DIR$/demo-closure/test.html" />
         <option value="$PROJECT_DIR$/demo-closure/10-pitfall.js" />
+        <option value="$PROJECT_DIR$/demo-other/00-this.js" />
       </list>
     </option>
   </component>
@@ -194,9 +204,9 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="475" />
+    <option name="x" value="662" />
     <option name="y" value="18" />
-    <option name="width" value="1418" />
+    <option name="width" value="1231" />
     <option name="height" value="997" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -316,26 +326,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.10-pitfall.js">
-    <configuration name="04-memory.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/es6/demo-closure/04-memory.html" />
+  <component name="RunManager" selected="Node.js.00-this.js">
+    <configuration name="00-this.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="00-this.js" working-dir="$PROJECT_DIR$/demo-other" />
     <configuration name="06-new-no-new.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="06-new-no-new.js" working-dir="$PROJECT_DIR$/demo-object" />
     <configuration name="07-new-no-new.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="07-new-no-new.js" working-dir="$PROJECT_DIR$/demo-object" />
     <configuration name="10-pitfall.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="10-pitfall.js" working-dir="$PROJECT_DIR$/demo-closure" />
     <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/demo-closure" />
     <list>
       <item itemvalue="Node.js.06-new-no-new.js" />
-      <item itemvalue="JavaScript Debug.04-memory.html" />
       <item itemvalue="Node.js.test.js" />
       <item itemvalue="Node.js.07-new-no-new.js" />
       <item itemvalue="Node.js.10-pitfall.js" />
+      <item itemvalue="Node.js.00-this.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.00-this.js" />
         <item itemvalue="Node.js.10-pitfall.js" />
         <item itemvalue="Node.js.07-new-no-new.js" />
         <item itemvalue="Node.js.test.js" />
         <item itemvalue="Node.js.06-new-no-new.js" />
-        <item itemvalue="JavaScript Debug.04-memory.html" />
       </list>
     </recent_temporary>
   </component>
@@ -370,23 +380,23 @@
       <workItem from="1559524376415" duration="5734000" />
       <workItem from="1559633716327" duration="5383000" />
       <workItem from="1559694687457" duration="21843000" />
-      <workItem from="1559782302593" duration="5517000" />
+      <workItem from="1559782302593" duration="11624000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241897000" />
+    <option name="totallyTimeSpent" value="248004000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="475" y="18" width="1418" height="997" extended-state="0" />
+    <frame x="662" y="18" width="1231" height="997" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16449276" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19027661" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33178115" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23748545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.2491269" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -434,9 +444,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/demo-object/原型链.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-object/基本类型原型链.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -696,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo-closure/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo-closure/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -714,13 +714,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8">
           <caret line="41" column="24" lean-forward="true" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo-object/07-new-no-new.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -738,10 +731,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo-closure/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-object/07-new-no-new.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo-closure/10-pitfall.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
-          <caret line="47" column="14" selection-start-line="47" selection-start-column="14" selection-end-line="47" selection-end-column="14" />
+          <caret line="79" column="28" lean-forward="true" selection-start-line="79" selection-start-column="28" selection-end-line="79" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-other/00-this.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
         </state>
       </provider>
     </entry>

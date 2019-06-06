@@ -19,8 +19,12 @@
         var end = +new Date();
         console.timeEnd("insert array")
         console.log("time spent: " + ( end - start));
+
+        function init (){
+            alert(window.name)
+        }
     </script>
 </head>
-<body>
+<body onload="init()">
 </body>
 </html>

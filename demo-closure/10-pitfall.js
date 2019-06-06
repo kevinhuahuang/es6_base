@@ -47,4 +47,55 @@ console.log(outerFix1[4]()) // 4
 /**
  * 坑2: this的指向
  * */
-console.log('-----------------坑2: this的指向--------------------------')
+console.log('----------------this指向-------------------')
+global.scope = 'global_scope' // 运行在node.js上，全局作用域是global而不是window
+function getScope () {
+  let scope = 'function_scope'
+  return this.scope // 函数的this指向全局作用域(但用new创建的对象时this反向实例对象)
+}
+console.log(getScope()) // 'global_scope'
+
+var object = {
+  scope: 'object_scope',
+  getName: function () { // 函数中的函数
+    return function () {
+      this.scope = 'change_scope' // 修改了全局作用域下的scope变量
+      return this.scope
+    }
+  }
+}
+console.log(object.getName()()) // change_scope
+console.log(getScope()) // change_scope
+// 因为里面的闭包函数是在全局作用域下执行的，也就是说，this指向全局作用域
+/**
+ * 坑3: 内存泄露
+ * */
+console.log('-------------------内存泄露------------------------')
+/**
+ * 当点击这个元素时，改变元素颜色后，el不会被释放，
+ * 因为el的引用不小心被放在一个匿名内部函数中。在这个内部函数(在全局中被调用)和本地对象之间（el）创建了一个循环引用。
+ */
+function changeColor () {
+  var el = document.getElementById('changeColor')
+  el.onclick = function () {
+    el.style.color = 'blue'
+  }
+}
+console.log('-----------解决方法0：手动在函数尾部将变量置为null,解除变量对内存的引用，内存将被释放-----------')
+console.log('-----------解决方法1：不使用变量------------')
+function changeColorFix1 () {
+  document.getElementById('changeColor').onclick = function () {
+    this.style.color = 'blue'
+  }
+}
+
+console.log('-----------解决方法2：匿名立即执行函数-----------')
+function changeColorFix2 () {
+  var clickHandler = function () {
+    this.style.backgroundColor = 'blue'
+  };
+  (function () { // 匿名立即执行函数，执行完即进行垃圾回收
+    var el = document.getElementById('changeColor')
+    el.onclick = clickHandler
+  })()
+}
