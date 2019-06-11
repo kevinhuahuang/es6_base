@@ -31,8 +31,9 @@ console.log('同一个构造函数实例化的对象具有相同的原型对象'
 console.log(kevin.__proto__ === vivian.__proto__) // true
 console.log('原型对象的constructor属性指向该原型对象的构造函数')
 console.log(Person.prototype.constructor === Person) // true
+console.log(kevin.__proto__.constructor === Person) // true
 
-// 访问实例对象的原型对象，不建议这样实例对象.__proto__, 建议这样 实例对象.getOwnProperty()
+// 访问实例对象的原型对象，不建议这样实例对象.__proto__, 建议这样 实例对象.getPrototypeOf
 // getPrototypeOf() 调用的是Object.prototype.__proto__
 console.log('访问实例对象的原型对象，不建议: kevin.__proto__, 建议: Object.getPrototypeOf(kevin)')
 console.log(kevin.__proto__ === Object.getPrototypeOf(vivian)) // true
@@ -43,8 +44,8 @@ console.log(kevin.constructor === Person) // true
 console.log('实例的constructor继承原型对象的constructor')
 console.log(kevin.__proto__.hasOwnProperty('constructor')) // true
 console.log(Person.prototype.hasOwnProperty('constructor')) // true
-console.log(Person.hasOwnProperty('constructor')) // false
-console.log(kevin.hasOwnProperty('constructor')) // false
+console.log(Person.hasOwnProperty('constructor')) // false constructor是继承而来，所以返回false
+console.log(kevin.hasOwnProperty('constructor')) // false constructor是继承而来，所以返回false
 // 实例的constructor指向构造函数，但constructor不是本身的属性，是继承自己Object的属性，所以hasOwnProperty为false
 
 // 原型对象也是实例对象，实际上，任何对象都可以看做是通过Object构造函数的new操作实例化的对象

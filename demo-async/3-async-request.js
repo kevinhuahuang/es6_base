@@ -23,3 +23,5 @@ async function test () { // 四个sleep按顺序执行
 }
 
 test()
+
+console.log('开始执行异步操作')

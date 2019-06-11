@@ -172,26 +172,26 @@ console.log(result3) // 37 + 5 = 42 ，第二个参数被忽略
 // 配合setTimeout
 // 在默认情况下，使用 window.setTimeout() 时，this 关键字会指向 window （或global）对象。
 // 当类的方法中需要 this 指向类的实例时，你可能需要显式地把 this 绑定到回调函数，就不会丢失该实例的引用。
-function LateBloomer () {
-  this.petalCount = Math.ceil(Math.random() * 12) + 1
+function FunctionMessage () {
+  this.message = 'FunctionMessage'
 }
 
 // 在 1 秒钟后声明 bloom
-LateBloomer.prototype.bloom = function () {
-  global.setTimeout(this.declare, 10) // 显示地把this绑定到回调函数, this指向类的实例
+FunctionMessage.prototype.bloom = function () {
+  global.setTimeout(this.showMessage, 10) // 显示地把this绑定到回调函数, this指向类的实例
 }
 
-LateBloomer.prototype.bloomBind = function () {
-  global.setTimeout(this.declare.bind(this), 20) // 显示地把this绑定到回调函数, this指向类的实例
+FunctionMessage.prototype.bloomBind = function () {
+  global.setTimeout(this.showMessage.bind(this), 20) // 显示地把this绑定到回调函数, this指向类的实例
 }
 
-LateBloomer.prototype.declare = function () {
-  console.log('I am a beautiful flower with ' + this.petalCount + ' petals!')
+FunctionMessage.prototype.showMessage = function () {
+  console.log(this.message)
 }
 
-let flower = new LateBloomer()
+let flower = new FunctionMessage()
 flower.bloom() // undefined
-flower.bloomBind() //
+flower.bloomBind() // FunctionMessage
 // =====================================================================================================================
 // 快捷调用
 // console.log('------------------------------------------------------------------------------------')
@@ -234,27 +234,27 @@ function Toy (name, price) {
 
 let cheese = new Food('cheese', 5)
 let robot = new Toy('robot', 40)
-console.log(cheese)
-console.log(robot)
+console.log(cheese) // Food { name: 'cheese', price: 5, category: 'food' }
+console.log(robot) // Toy { name: 'robot', price: 40, category: 'toy' }
 // =====================================================================================================================
 // 使用call方法调用匿名函数
 console.log('----------call方法调用匿名函数-----------------------')
-var animals = [
+let animals = [
   { species: 'Lion', name: 'King' },
   { species: 'Whale', name: 'Fail' }
 ]
 
 for (let i = 0; i < animals.length; i++) {
   (function (index) { // 这个匿名函数的主要目的是给每个数组元素对象添加一个print方法
-    this.print = function () {
+    this.print = function () { // 添加print方法
       console.log('#' + index + ' ' + this.species +
                 ': ' + this.name)
     }
-    this.print()
+    // this.print()
   }).call(animals[i], i) // i 传递给参数index
 }
 
-console.log(animals)
+console.log(animals) // animals增加了print方法
 // =====================================================================================================================
 // 使用call方法调用函数并且指定上下文的this
 // 下例子中，当调用greet时，该方法的this值会绑定到obj对象

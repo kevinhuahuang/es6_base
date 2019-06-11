@@ -30,7 +30,7 @@ function Person1 (str) {
 
 let kevin1 = Person1('kevin')
 console.log(kevin1) // human
-console.log(kevin1.kind) // undefined 不报错，因为kevin2非undefined
+console.log(kevin1.kind) // undefined 不报错，因为kevin1非undefined
 let shirley1 = new Person1('shirley')
 console.log(shirley1) // Person1 { name: 'kevin' }
 console.log(shirley1.kind) // human

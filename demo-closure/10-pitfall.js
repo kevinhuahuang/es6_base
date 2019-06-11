@@ -55,7 +55,7 @@ function getScope () {
 }
 console.log(getScope()) // 'global_scope'
 
-var object = {
+let object = {
   scope: 'object_scope',
   getName: function () { // 函数中的函数
     return function () {
@@ -68,7 +68,7 @@ console.log(object.getName()()) // change_scope
 console.log(getScope()) // change_scope
 // 因为里面的闭包函数是在全局作用域下执行的，也就是说，this指向全局作用域
 /**
- * 坑3: 内存泄露
+ * 坑3: 内存泄露(现在的浏览器似乎不会)
  * */
 console.log('-------------------内存泄露------------------------')
 /**

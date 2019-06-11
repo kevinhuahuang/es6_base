@@ -60,8 +60,10 @@ function Rectangle () {
 }
 
 // 子类续承父类
-Rectangle.prototype = Object.create(Shape.prototype)
-Rectangle.prototype.constructor = Rectangle
+Rectangle.prototype = Object.create(Shape.prototype) // 设置原型链
+console.log(Rectangle.prototype.constructor) // Function: shape
+Rectangle.prototype.constructor = Rectangle // 重新指定构造函数
+console.log(Rectangle.prototype.constructor) // Function: Rectangle
 
 var rect = new Rectangle()
 

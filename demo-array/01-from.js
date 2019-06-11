@@ -1,14 +1,17 @@
 /*
 Array.from(arrayLike[, mapFn[, thisArg]])
 arrayLike: 想要转换成数组的伪数组对象或可迭代对象。
-mapFn 如果指定了该参数，新数组中的每个元素会执行该回调函数。
+mapFn 如果指定了该参数，新数组中的每个元素会执行该回调函数。相当于map操作
 thisArg 可选参数，执行回调函数 mapFn 时 this 对象。
 返回值: 一个新的数组实例
 * */
 
 // 创建数组
+let newAryEmpty = Array.from({ length: 6 }) // 空值返回undefined, 省略了第二个参数 () => {}
 let newAry = Array.from({ length: 6 }, () => { return 0 }) //  创建长度为6，元素都为0的数组 return 0 应该省略为 0
 let newAryAry = Array.from({ length: 4 }, () => Array.from({ length: 9 }, () => 1)) // 创建[6][9]元素为1的二维数组
+console.log('空数组')
+console.log(newAryEmpty)
 console.log('创建一维数组: ')
 console.log(newAry)
 console.log('创建二维数组: ')

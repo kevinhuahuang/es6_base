@@ -15,17 +15,17 @@
 const objSource = { a: 1 }
 const objCopy = Object.assign({}, objSource)
 console.log('复制一个源对象')
-console.log(objCopy)
+console.log(objCopy) //  { a: 1 }
 
 // --------------------------------------------------------------
 // 合并对象
 const objSource1 = { a: 1 }
 const objSource2 = { b: 2 }
 const objSource3 = { c: 3 }
-const objMerge = Object.assign({}, objSource1, objSource2, objSource3) // 使用空对象为目标对象，其它对象不会被修改
+const objMerge = Object.assign(objSource1, objSource2, objSource3) // 使用空对象为目标对象，其它对象不会被修改
 console.log('合并对象')
-console.log(objMerge)
-console.log(objSource1)
+console.log(objMerge) // { a: 1, b: 2, c: 3 }
+console.log(objSource1) // { a: 1, b: 2, c: 3 }
 
 // --------------------------------------------------------------
 // 合并具有相同属性的对象 后面替换掉前面的
@@ -34,7 +34,7 @@ const objSource02 = { b: 2, c: 2 }
 const objSource03 = { c: 3 }
 const objMergeSame = Object.assign({}, objSource01, objSource02, objSource03)
 console.log('合并具有相同属性的对象')
-console.log(objMergeSame)
+console.log(objMergeSame) // { a: 1, b: 2, c: 3 }
 
 // --------------------------------------------------------------
 // 不能拷贝继承属性和不可枚举
@@ -50,7 +50,7 @@ const objSpecial = Object.create({ foo: 1 }, { // foo:1是继承属性
 
 const objCopySpecial = Object.assign({}, objSpecial)
 console.log('不能拷贝继承属性和不可枚举')
-console.log(objCopySpecial)
+console.log(objCopySpecial) // { baz: 3 }
 
 // --------------------------------------------------------------
 // 原始类型会被包装为对象
@@ -62,7 +62,7 @@ const sampl = Symbol('foo') // 被忽略
 // 注意，只有字符串的包装对象才可能有自身可枚举属性。
 const originToObj = Object.assign({}, str, null, boolea, undefined, num, sampl)
 console.log('原始类型会被包装为对象')
-console.log(originToObj)
+console.log(originToObj) // { '0': 'a', '1': 'b', '2': 'c' }
 
 // --------------------------------------------------------------
 // 拷贝symbol类型的属性
@@ -71,7 +71,7 @@ const ojbSymbol = { [Symbol('foo')]: 2 }
 
 const copySymbol = Object.assign({}, objNoSymbol, ojbSymbol)
 console.log('拷贝symbol类型的属性')
-console.log(copySymbol)
+console.log(copySymbol) // { a: 1, [Symbol(foo)]: 2 }
 
 // --------------------------------------------------------------
 // 非深拷贝，拷贝属性值和对象的引用
@@ -103,7 +103,6 @@ let obj3 = JSON.parse(JSON.stringify(obj1))
 obj1.a = 4
 obj1.b.c = 4
 console.log(JSON.stringify(obj3)) // { a: 0, b: { c: 0}}
-
 // --------------------------------------------------------------
 // 与扩展运算符...的比较，都是对象浅拷贝
 let objBeCopy = { name: 'vivian', property: { age: 18 } }

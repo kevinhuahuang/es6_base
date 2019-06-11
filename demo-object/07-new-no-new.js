@@ -13,7 +13,7 @@ console.log(person.name) // person
 console.log(kevin.name) // undefined
 /**
  * 注意下面用new创建对象，用this.name的值并不是shirley而是和上面一样都是kevin, 但this.sex则是正确的woman
- * this.name 换成 let name则不同有这个问题，看来用不用new，this上是有区别的
+ * this.name 换成 let name则不会有这个问题，看来用不用new，this上是有区别的
  * */
 let shirley1 = new person('shirley', 'shirley', 'woman', 'translator')
 console.log(shirley1) // { person_name: 'kevin' } 与无new一样，据说里面this的指向不一样
